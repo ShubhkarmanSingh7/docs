@@ -1,0 +1,599 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <meta name="keywords" content="Gazebo Transport">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Gazebo Transport: Node.hh Source File</title>
+    <script type="text/javascript" src="https://gazebosim.org/assets/doxygen/dynsections.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <link rel="icon" type="image/x-icon" href="https://gazebosim.org/assets/icon/favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.deep_orange-blue.min.css" />
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.min.js"></script>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> </script>
+    <link href="https://gazebosim.org/assets/doxygen/doxygen.css" rel="stylesheet" type="text/css">
+  </head>
+    <script type="text/javascript">
+      /* Replace all the "permalink" &#9670;&nbsp; icons with a unicode link
+        symbol.*/
+      $(document).ready(function() {
+        var elems = document.getElementsByClassName("permalink");
+        for (var i = 0; i < elems.length; ++i) {
+          elems[i].firstChild.innerHTML="&#x1f517;";
+          elems[i].firstChild.style.fontSize="18px";
+        }
+      });
+    </script>
+  </head>
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+    <div class="mdl-layout__drawer mdl-color--grey-100 mdl-color-text--blue-grey-50">
+      <header class="mdl-color--grey-100">
+        <a href="index.html"><img width="60px" src="https://gazebosim.org/assets/doxygen/gazebo_logo.svg"/></a>
+        <h1 class="project_title">Gazebo Transport</h1>
+        <h2>API Reference</h2>
+        <div class="version">
+        14.3.0
+        </div>
+      </header>
+      <!-- NOTE: If you add a link to a doxygen generated page, then make
+                 sure to update the required_html_fils list in
+                 GzCreateDocs.cmake -->
+      <nav class="gz-navigation mdl-navigation">
+        <a class="mdl-navigation__link" href="tutorials.html">
+          <i class="mdl-color-text--grey-400 material-icons"
+             role="presentation">insert_drive_file</i>Tutorials</a>
+        <a id="class_menu" class="mdl-navigation__link" href="#">
+          <i class="mdl-color-text--grey-400 material-icons"
+             role="presentation">library_books</i>Classes</a>
+        <a id="namespaces_menu"class="mdl-navigation__link" href="#">
+          <i class="mdl-color-text--grey-400 material-icons"
+             role="presentation">toc</i>Namespaces</a>
+        <a class="mdl-navigation__link" href="files.html">
+          <i class="mdl-color-text--grey-400 material-icons"
+             role="presentation">insert_drive_file</i>Files</a>
+        <a class="mdl-navigation__link" target="_blank"
+           href="http://gazebosim.org">
+          <i class="mdl-color-text--grey-400 material-icons"
+             role="presentation">launch</i>Gazebo Website</a>
+      </nav>
+      <!-- classes sub menu -->
+      <ul for="class_menu" class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect mdl-navigation">
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link" href="classes.html">Index</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="annotated.html">List</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="hierarchy.html">Hierarchy</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="functions.html">Members: All</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="functions_func.html">Members: Functions</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="functions_vars.html">Members: Variables</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="functions_type.html">Members: Typedefs</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="functions_enum.html">Members: Enumerations</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="functions_eval.html">Members: Enumerator</a>
+        </li>
+      </ul>
+      <!-- namespaces sub menu -->
+      <ul for="namespaces_menu" class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect mdl-navigation">
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespaces.html">List</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespacemembers.html">Members</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespacemembers_func.html">Functions</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespacemembers_type.html">Typedefs</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespacemembers_vars.html">Variables</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespacemembers_enum.html">Enumerations</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespacemembers_eval.html">Enumerator</a>
+        </li>
+      </ul>
+    </div>
+    <main class="mdl-layout__content mdl-color--white">
+    <div id="top">
+<!-- Generated by Doxygen 1.9.8 -->
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_f4db18e20b2d6deaab52af1e206e89e6.html">gz-transport</a></li><li class="navelem"><a class="el" href="dir_b189d785cc76f61c29d2cd053da866e2.html">include</a></li><li class="navelem"><a class="el" href="dir_e483de34e0e4465459729480e96e4588.html">gz</a></li><li class="navelem"><a class="el" href="dir_3013594c344495507ae2ded369ec56f1.html">transport</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Node.hh</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="Node_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright (C) 2014 Open Source Robotics Foundation</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * you may not use this file except in compliance with the License.</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * You may obtain a copy of the License at</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> *     http://www.apache.org/licenses/LICENSE-2.0</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> * Unless required by applicable law or agreed to in writing, software</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> * See the License for the specific language governing permissions and</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> * limitations under the License.</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#ifndef GZ_TRANSPORT_NODE_HH_</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#define GZ_TRANSPORT_NODE_HH_</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;mutex&gt;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;optional&gt;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;unordered_set&gt;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &quot;<a class="code" href="AdvertiseOptions_8hh.html">gz/transport/AdvertiseOptions.hh</a>&quot;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &quot;gz/transport/config.hh&quot;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &quot;gz/transport/Export.hh&quot;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &quot;<a class="code" href="NodeOptions_8hh.html">gz/transport/NodeOptions.hh</a>&quot;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &quot;<a class="code" href="NodeShared_8hh.html">gz/transport/NodeShared.hh</a>&quot;</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &quot;<a class="code" href="Publisher_8hh.html">gz/transport/Publisher.hh</a>&quot;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &quot;<a class="code" href="RepHandler_8hh.html">gz/transport/RepHandler.hh</a>&quot;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &quot;<a class="code" href="ReqHandler_8hh.html">gz/transport/ReqHandler.hh</a>&quot;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &quot;<a class="code" href="SubscribeOptions_8hh.html">gz/transport/SubscribeOptions.hh</a>&quot;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &quot;<a class="code" href="SubscriptionHandler_8hh.html">gz/transport/SubscriptionHandler.hh</a>&quot;</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &quot;<a class="code" href="TopicStatistics_8hh.html">gz/transport/TopicStatistics.hh</a>&quot;</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#include &quot;<a class="code" href="TopicUtils_8hh.html">gz/transport/TopicUtils.hh</a>&quot;</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#include &quot;<a class="code" href="TransportTypes_8hh.html">gz/transport/TransportTypes.hh</a>&quot;</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#include &quot;<a class="code" href="WaitHelpers_8hh.html">gz/transport/WaitHelpers.hh</a>&quot;</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacegz_1_1transport.html">gz::transport</a></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>{</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="comment">// Inline bracket to help doxygen filtering.</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keyword">inline</span> <span class="keyword">namespace </span>GZ_TRANSPORT_VERSION_NAMESPACE {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="comment">//</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="comment">// Forward declarations.</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keyword">class </span>NodePrivate;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="namespacegz_1_1transport.html#a0dabc16117c49d4d1413c912ee974c92">   62</a></span>  <span class="keywordtype">int</span> GZ_TRANSPORT_VISIBLE <a class="code hl_function" href="namespacegz_1_1transport.html#a0dabc16117c49d4d1413c912ee974c92" title="Get the capacity of the buffer (High Water Mark) that stores incoming Gazebo Transport messages....">rcvHwm</a>();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="namespacegz_1_1transport.html#a9cdb929a2cd51bfce27f2b0123659fd3">   74</a></span>  <span class="keywordtype">int</span> GZ_TRANSPORT_VISIBLE <a class="code hl_function" href="namespacegz_1_1transport.html#a9cdb929a2cd51bfce27f2b0123659fd3" title="Get the capacity of the buffer (High Water Mark) that stores outgoing Gazebo Transport messages....">sndHwm</a>();</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="foldopen" id="foldopen00080" data-start="{" data-end="};">
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html">   80</a></span>  <span class="keyword">class </span>GZ_TRANSPORT_VISIBLE <a class="code hl_class" href="classgz_1_1transport_1_1Node.html" title="A class that allows a client to communicate with other peers. There are two main communication modes:...">Node</a></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keyword">class </span>PublisherPrivate;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keyword">class </span>SubscriberPrivate;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="foldopen" id="foldopen00101" data-start="{" data-end="};">
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node_1_1Publisher.html">  101</a></span>    <span class="keyword">public</span>: <span class="keyword">class </span>GZ_TRANSPORT_VISIBLE <a class="code hl_class" href="classgz_1_1transport_1_1Node_1_1Publisher.html" title="A class that is used to store information about an advertised publisher. An instance of this class is...">Publisher</a></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    {</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node_1_1Publisher.html#aa770fafba80ec205c874955fd8cf0a91">  104</a></span>      <span class="keyword">public</span>: <a class="code hl_function" href="classgz_1_1transport_1_1Node_1_1Publisher.html#aa770fafba80ec205c874955fd8cf0a91" title="Default constructor.">Publisher</a>();</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node_1_1Publisher.html#a5fbb9e2f4d6c669179e0aabc78b54394">  108</a></span>      <span class="keyword">public</span>: <span class="keyword">explicit</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node_1_1Publisher.html#a5fbb9e2f4d6c669179e0aabc78b54394" title="Constructor.">Publisher</a>(<span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1transport_1_1MessagePublisher.html" title="This class stores all the information about a message publisher.">MessagePublisher</a> &amp;_publisher);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node_1_1Publisher.html#a76ad562692a59682d614fd20a96902b9">  111</a></span>      <span class="keyword">public</span>: <span class="keyword">virtual</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node_1_1Publisher.html#a76ad562692a59682d614fd20a96902b9" title="Destructor.">~Publisher</a>();</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node_1_1Publisher.html#a9b3baad8c612d81b96e46f84d7e97580">  116</a></span>      <span class="keyword">public</span>: <span class="keyword">operator</span> bool();</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node_1_1Publisher.html#a67b76affb3b5d35fa419ac234144038b">  121</a></span>      <span class="keyword">public</span>: <span class="keyword">operator</span> bool() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node_1_1Publisher.html#a470438bf41ff0f2cc2fc41682c8f839e">  126</a></span>      <span class="keyword">public</span>: <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node_1_1Publisher.html#a470438bf41ff0f2cc2fc41682c8f839e" title="Return true if valid information, such as a non-empty topic name, is present.">Valid</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node_1_1Publisher.html#adb2f83cb844a8b92b0539a7478075269">  133</a></span>      <span class="keyword">public</span>: <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node_1_1Publisher.html#adb2f83cb844a8b92b0539a7478075269" title="Publish a message. This function will copy the message when publishing to interprocess subscribers....">Publish</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespacegz_1_1transport.html#ad0c5b75d912824efaf1e6256e253b236">ProtoMsg</a> &amp;_msg);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node_1_1Publisher.html#acda74981e00347b05e90d5579127b77e">  156</a></span>      <span class="keyword">public</span>: <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node_1_1Publisher.html#acda74981e00347b05e90d5579127b77e" title="Publish a raw pre-serialized message.">PublishRaw</a>(</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_msgData,</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_msgType);</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node_1_1Publisher.html#abf13fe111d027b992152446e961c7900">  168</a></span>      <span class="keyword">public</span>: <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node_1_1Publisher.html#abf13fe111d027b992152446e961c7900" title="Check if message publication is throttled. If so, verify whether the next message should be published...">ThrottledUpdateReady</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>      <span class="keyword">private</span>: <span class="keywordtype">bool</span> UpdateThrottling();</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node_1_1Publisher.html#ada60decf1fdda4f45af52b443cee5bcf">  177</a></span>      <span class="keyword">public</span>: <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node_1_1Publisher.html#ada60decf1fdda4f45af52b443cee5bcf" title="Return true if this publisher has subscribers.">HasConnections</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="comment">// Disable warning C4251 which is triggered by</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="comment">// std::shared_ptr</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="preprocessor">#pragma warning(push)</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="preprocessor">#pragma warning(disable: 4251)</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>      <span class="keyword">private</span>: <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr&lt;PublisherPrivate&gt;</a> dataPtr;</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="preprocessor">#pragma warning(pop)</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    };</div>
+</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="foldopen" id="foldopen00209" data-start="{" data-end="};">
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node_1_1Subscriber.html">  209</a></span>    <span class="keyword">public</span>: <span class="keyword">class </span>GZ_TRANSPORT_VISIBLE <a class="code hl_class" href="classgz_1_1transport_1_1Node_1_1Subscriber.html" title="A class that is used to store information about an subscriber. An instance of this class is returned ...">Subscriber</a></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    {</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node_1_1Subscriber.html#a0ea1ea1d8b6096f13cf8b5b62b2e6a35">  212</a></span>      <span class="keyword">public</span>: <a class="code hl_function" href="classgz_1_1transport_1_1Node_1_1Subscriber.html#a0ea1ea1d8b6096f13cf8b5b62b2e6a35" title="Default constructor.">Subscriber</a>();</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node_1_1Subscriber.html#a229345daf63ae900d81248c5b32fd135">  219</a></span>      <span class="keyword">public</span>: <a class="code hl_function" href="classgz_1_1transport_1_1Node_1_1Subscriber.html#a229345daf63ae900d81248c5b32fd135" title="Constructor.">Subscriber</a>(<span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>                         <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_nUuid,</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>                         <span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1transport_1_1NodeOptions.html" title="A class for customizing the behavior of the Node. E.g.: Set a custom namespace or a partition name.">NodeOptions</a> &amp;_nOpts,</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>                         <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_hUuid);</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node_1_1Subscriber.html#a727f18f44d09004cc5f8a7431681f271">  226</a></span>      <span class="keyword">public</span>: <span class="keyword">virtual</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node_1_1Subscriber.html#a727f18f44d09004cc5f8a7431681f271" title="Destructor. Unsubscribe to the topic and remove the subcription handler.">~Subscriber</a>();</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node_1_1Subscriber.html#ad945c8a2cc213b1bac5854304e07eb68">  230</a></span>      <span class="keyword">public</span>: <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node_1_1Subscriber.html#ad945c8a2cc213b1bac5854304e07eb68" title="Unsubscribe from the topic.">Unsubscribe</a>();</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node_1_1Subscriber.html#a9b3baad8c612d81b96e46f84d7e97580">  235</a></span>      <span class="keyword">public</span>: <span class="keyword">operator</span> bool();</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node_1_1Subscriber.html#a67b76affb3b5d35fa419ac234144038b">  240</a></span>      <span class="keyword">public</span>: <span class="keyword">operator</span> bool() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node_1_1Subscriber.html#a2e6d238e41c7c3013fd25cf102337b69">  244</a></span>      <span class="keyword">public</span>: <a class="code hl_function" href="classgz_1_1transport_1_1Node_1_1Subscriber.html#a2e6d238e41c7c3013fd25cf102337b69" title="Move constructor.">Subscriber</a>(<a class="code hl_class" href="classgz_1_1transport_1_1Node_1_1Subscriber.html" title="A class that is used to store information about an subscriber. An instance of this class is returned ...">Subscriber</a> &amp;&amp;_other);</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node_1_1Subscriber.html#afc46bb5b9423df9244ee0f98c5def7b2">  249</a></span>      <span class="keyword">public</span>: <a class="code hl_class" href="classgz_1_1transport_1_1Node_1_1Subscriber.html" title="A class that is used to store information about an subscriber. An instance of this class is returned ...">Node::Subscriber</a> &amp;<a class="code hl_function" href="classgz_1_1transport_1_1Node_1_1Subscriber.html#afc46bb5b9423df9244ee0f98c5def7b2" title="Move assignment operator.">operator=</a>(<a class="code hl_class" href="classgz_1_1transport_1_1Node_1_1Subscriber.html" title="A class that is used to store information about an subscriber. An instance of this class is returned ...">Subscriber</a> &amp;&amp;_other);</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node_1_1Subscriber.html#a470438bf41ff0f2cc2fc41682c8f839e">  254</a></span>      <span class="keyword">public</span>: <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node_1_1Subscriber.html#a470438bf41ff0f2cc2fc41682c8f839e" title="Return true if valid information, such as a non-empty topic name, node and handler UUIDs.">Valid</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span><span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span><span class="comment">// Disable warning C4251 which is triggered by</span></div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="comment">// std::shared_ptr</span></div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span><span class="preprocessor">#pragma warning(push)</span></div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span><span class="preprocessor">#pragma warning(disable: 4251)</span></div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>      <span class="keyword">private</span>: <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr&lt;SubscriberPrivate&gt;</a> dataPtr;</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span><span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span><span class="preprocessor">#pragma warning(pop)</span></div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    };</div>
+</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#a0d313fac56abd7ebe58a17f1530b879e">  270</a></span>    <span class="keyword">public</span>: <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#a0d313fac56abd7ebe58a17f1530b879e">Node</a>();</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span> </div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#a43840977e25407114f67a5cb98f23896">  274</a></span>    <span class="keyword">public</span>: <span class="keyword">explicit</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#a43840977e25407114f67a5cb98f23896" title="Constructor.">Node</a>(<span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1transport_1_1NodeOptions.html" title="A class for customizing the behavior of the Node. E.g.: Set a custom namespace or a partition name.">NodeOptions</a> &amp;_options);</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#aaaefc7b696b15da7a556d7911735a277">  277</a></span>    <span class="keyword">public</span>: <span class="keyword">virtual</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#aaaefc7b696b15da7a556d7911735a277" title="Destructor.">~Node</a>();</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span> </div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    <span class="keyword">public</span>: <span class="keyword">template</span>&lt;<span class="keyword">typename</span> MessageT&gt;</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#a48c80e1b3823d9071045da3adfe6f8d0">  288</a></span>    <a class="code hl_class" href="classgz_1_1transport_1_1Node_1_1Publisher.html" title="A class that is used to store information about an advertised publisher. An instance of this class is...">Node::Publisher</a> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#a48c80e1b3823d9071045da3adfe6f8d0" title="Advertise a new topic. If a topic is currently advertised, you cannot advertise it a second time (reg...">Advertise</a>(</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>        <span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1transport_1_1AdvertiseMessageOptions.html" title="A class for customizing the publication options for a topic advertised. E.g.: Set the rate of message...">AdvertiseMessageOptions</a> &amp;_options = <a class="code hl_class" href="classgz_1_1transport_1_1AdvertiseMessageOptions.html" title="A class for customizing the publication options for a topic advertised. E.g.: Set the rate of message...">AdvertiseMessageOptions</a>());</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> </div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#a17365edad02e63a516edec4bf0005fd5">  303</a></span>    <span class="keyword">public</span>: <a class="code hl_class" href="classgz_1_1transport_1_1Node_1_1Publisher.html" title="A class that is used to store information about an advertised publisher. An instance of this class is...">Node::Publisher</a> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#a17365edad02e63a516edec4bf0005fd5" title="Advertise a new topic. If a topic is currently advertised, you cannot advertise it a second time (reg...">Advertise</a>(</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_msgTypeName,</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>        <span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1transport_1_1AdvertiseMessageOptions.html" title="A class for customizing the publication options for a topic advertised. E.g.: Set the rate of message...">AdvertiseMessageOptions</a> &amp;_options = <a class="code hl_class" href="classgz_1_1transport_1_1AdvertiseMessageOptions.html" title="A class for customizing the publication options for a topic advertised. E.g.: Set the rate of message...">AdvertiseMessageOptions</a>());</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span> </div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#aa12c3208291e61f3dd0744272d931d3f">  310</a></span>    <span class="keyword">public</span>: <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::string&gt;</a> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#aa12c3208291e61f3dd0744272d931d3f" title="Get the list of topics advertised by this node.">AdvertisedTopics</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span> </div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>    <span class="keyword">public</span>: <span class="keyword">template</span>&lt;<span class="keyword">typename</span> MessageT&gt;</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#a07053a1894f5c860d62b3b9256fc6355">  322</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#a07053a1894f5c860d62b3b9256fc6355" title="Subscribe to a topic registering a callback. Note that this callback does not include any message inf...">Subscribe</a>(</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>        <span class="keywordtype">void</span>(*_callback)(<span class="keyword">const</span> MessageT &amp;_msg),</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>        <span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1transport_1_1SubscribeOptions.html" title="A class to provide different options for a subscription.">SubscribeOptions</a> &amp;_opts = <a class="code hl_class" href="classgz_1_1transport_1_1SubscribeOptions.html" title="A class to provide different options for a subscription.">SubscribeOptions</a>());</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span> </div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>    <span class="keyword">public</span>: <span class="keyword">template</span>&lt;<span class="keyword">typename</span> MessageT&gt;</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#adffa9bc04a2005cae5c775257fd7dff4">  336</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#adffa9bc04a2005cae5c775257fd7dff4" title="Subscribe to a topic registering a callback. Note that this callback does not include any message inf...">Subscribe</a>(</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>        <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a>&lt;<span class="keywordtype">void</span>(<span class="keyword">const</span> MessageT &amp;_msg)&gt; _callback,</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>        <span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1transport_1_1SubscribeOptions.html" title="A class to provide different options for a subscription.">SubscribeOptions</a> &amp;_opts = <a class="code hl_class" href="classgz_1_1transport_1_1SubscribeOptions.html" title="A class to provide different options for a subscription.">SubscribeOptions</a>());</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span> </div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>    <span class="keyword">public</span>: <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ClassT, <span class="keyword">typename</span> MessageT&gt;</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#a942bde4fdf741d34112a622ed49e329f">  352</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#a942bde4fdf741d34112a622ed49e329f" title="Subscribe to a topic registering a callback. Note that this callback does not include any message inf...">Subscribe</a>(</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>        <span class="keywordtype">void</span>(ClassT::*_callback)(const MessageT &amp;_msg),</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>        ClassT *_obj,</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>        const <a class="code hl_class" href="classgz_1_1transport_1_1SubscribeOptions.html" title="A class to provide different options for a subscription.">SubscribeOptions</a> &amp;_opts = <a class="code hl_class" href="classgz_1_1transport_1_1SubscribeOptions.html" title="A class to provide different options for a subscription.">SubscribeOptions</a>());</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span> </div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>    <span class="keyword">public</span>: <span class="keyword">template</span>&lt;<span class="keyword">typename</span> MessageT&gt;</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#abc759ace8503cc34e8765b8cdf6f3477">  369</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#abc759ace8503cc34e8765b8cdf6f3477" title="Subscribe to a topic registering a callback. Note that this callback includes message information....">Subscribe</a>(</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>        <span class="keywordtype">void</span>(*_callback)(<span class="keyword">const</span> MessageT &amp;_msg, <span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1transport_1_1MessageInfo.html" title="A class that provides information about the message received.">MessageInfo</a> &amp;_info),</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>        <span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1transport_1_1SubscribeOptions.html" title="A class to provide different options for a subscription.">SubscribeOptions</a> &amp;_opts = <a class="code hl_class" href="classgz_1_1transport_1_1SubscribeOptions.html" title="A class to provide different options for a subscription.">SubscribeOptions</a>());</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span> </div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>    <span class="keyword">public</span>: <span class="keyword">template</span>&lt;<span class="keyword">typename</span> MessageT&gt;</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#a56fa8a28feb54ca098f6e8a6e5b7491e">  384</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#a56fa8a28feb54ca098f6e8a6e5b7491e" title="Subscribe to a topic registering a callback. Note that this callback includes message information....">Subscribe</a>(</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>        <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a>&lt;<span class="keywordtype">void</span>(<span class="keyword">const</span> MessageT &amp;_msg,</div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>                           <span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1transport_1_1MessageInfo.html" title="A class that provides information about the message received.">MessageInfo</a> &amp;_info)&gt; _callback,</div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>        <span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1transport_1_1SubscribeOptions.html" title="A class to provide different options for a subscription.">SubscribeOptions</a> &amp;_opts = <a class="code hl_class" href="classgz_1_1transport_1_1SubscribeOptions.html" title="A class to provide different options for a subscription.">SubscribeOptions</a>());</div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span> </div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>    <span class="keyword">public</span>: <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ClassT, <span class="keyword">typename</span> MessageT&gt;</div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#af9050a9a4012b0d8deaf2ba384ecf63e">  402</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#af9050a9a4012b0d8deaf2ba384ecf63e" title="Subscribe to a topic registering a callback. Note that this callback includes message information....">Subscribe</a>(</div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>        <span class="keywordtype">void</span>(ClassT::*_callback)(const MessageT &amp;_msg,</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>                                 const <a class="code hl_class" href="classgz_1_1transport_1_1MessageInfo.html" title="A class that provides information about the message received.">MessageInfo</a> &amp;_info),</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>        ClassT *_obj,</div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>        const <a class="code hl_class" href="classgz_1_1transport_1_1SubscribeOptions.html" title="A class to provide different options for a subscription.">SubscribeOptions</a> &amp;_opts = <a class="code hl_class" href="classgz_1_1transport_1_1SubscribeOptions.html" title="A class to provide different options for a subscription.">SubscribeOptions</a>());</div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span> </div>
+<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>    <span class="keyword">public</span>: <span class="keyword">template</span> &lt;<span class="keyword">typename</span> ...Args&gt;</div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#a83101247c17be80d60e942c1a7cdad45">  429</a></span>    <a class="code hl_class" href="classgz_1_1transport_1_1Node_1_1Subscriber.html" title="A class that is used to store information about an subscriber. An instance of this class is returned ...">Node::Subscriber</a> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#a83101247c17be80d60e942c1a7cdad45" title="Create a subscriber to a topic registering a callback This is function is overloaded with different v...">CreateSubscriber</a>(<span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>                                      Args &amp;&amp; ...args);</div>
+<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span> </div>
+<div class="line"><a id="l00437" name="l00437"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#ae144a6b89785c7a4c324645968ce2c98">  437</a></span>    <span class="keyword">public</span>: <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::string&gt;</a> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#ae144a6b89785c7a4c324645968ce2c98" title="Get the list of topics subscribed by this node. Note that we might be interested in one topic but we ...">SubscribedTopics</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span> </div>
+<div class="line"><a id="l00442" name="l00442"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#ae41bdd59f15ecacfb8c4ffb12c279798">  442</a></span>    <span class="keyword">public</span>: <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#ae41bdd59f15ecacfb8c4ffb12c279798" title="Unsubscribe from a topic.">Unsubscribe</a>(<span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic);</div>
+<div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span> </div>
+<div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span>    <span class="keyword">public</span>: <span class="keyword">template</span>&lt;<span class="keyword">typename</span> RequestT, <span class="keyword">typename</span> ReplyT&gt;</div>
+<div class="line"><a id="l00463" name="l00463"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#a3d4b4773db7350b906421c8eaa73778d">  463</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#a3d4b4773db7350b906421c8eaa73778d" title="Advertise a new service. In this version the callback is a plain function pointer.">Advertise</a>(</div>
+<div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>        <span class="keywordtype">bool</span>(*_callback)(<span class="keyword">const</span> RequestT &amp;_request, ReplyT &amp;_reply),</div>
+<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>        <span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1transport_1_1AdvertiseServiceOptions.html" title="A class for customizing the publication options for a service advertised.">AdvertiseServiceOptions</a> &amp;_options = <a class="code hl_class" href="classgz_1_1transport_1_1AdvertiseServiceOptions.html" title="A class for customizing the publication options for a service advertised.">AdvertiseServiceOptions</a>());</div>
+<div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span> </div>
+<div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span>    <span class="keyword">public</span>: <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ReplyT&gt;</div>
+<div class="line"><a id="l00486" name="l00486"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#ae27484097df58cc4bc0b503e47d3c660">  486</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#ae27484097df58cc4bc0b503e47d3c660" title="Advertise a new service without input parameter. In this version the callback is a free function.">Advertise</a>(</div>
+<div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>        <span class="keywordtype">bool</span>(*_callback)(ReplyT &amp;_reply),</div>
+<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>        <span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1transport_1_1AdvertiseServiceOptions.html" title="A class for customizing the publication options for a service advertised.">AdvertiseServiceOptions</a> &amp;_options = <a class="code hl_class" href="classgz_1_1transport_1_1AdvertiseServiceOptions.html" title="A class for customizing the publication options for a service advertised.">AdvertiseServiceOptions</a>());</div>
+<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span> </div>
+<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>    <span class="keyword">public</span>: <span class="keyword">template</span>&lt;<span class="keyword">typename</span> RequestT&gt;</div>
+<div class="line"><a id="l00508" name="l00508"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#a5b99b189689b2a246e56c017444a0c1e">  508</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#a5b99b189689b2a246e56c017444a0c1e" title="Advertise a new service without any output parameter. In this version the callback is a free function...">Advertise</a>(</div>
+<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span>        <span class="keywordtype">void</span>(*_callback)(<span class="keyword">const</span> RequestT &amp;_request),</div>
+<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span>        <span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1transport_1_1AdvertiseServiceOptions.html" title="A class for customizing the publication options for a service advertised.">AdvertiseServiceOptions</a> &amp;_options = <a class="code hl_class" href="classgz_1_1transport_1_1AdvertiseServiceOptions.html" title="A class for customizing the publication options for a service advertised.">AdvertiseServiceOptions</a>());</div>
+<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span> </div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>    <span class="keyword">public</span>: <span class="keyword">template</span>&lt;<span class="keyword">typename</span> RequestT, <span class="keyword">typename</span> ReplyT&gt;</div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#a4ee8732f7ae481ecc4fc5a13757b9ae4">  532</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#a4ee8732f7ae481ecc4fc5a13757b9ae4" title="Advertise a new service. In this version the callback is a lambda function.">Advertise</a>(</div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>        <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a>&lt;<span class="keywordtype">bool</span>(<span class="keyword">const</span> RequestT &amp;_request,</div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>                           ReplyT &amp;_reply)&gt; _callback,</div>
+<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>        <span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1transport_1_1AdvertiseServiceOptions.html" title="A class for customizing the publication options for a service advertised.">AdvertiseServiceOptions</a> &amp;_options = <a class="code hl_class" href="classgz_1_1transport_1_1AdvertiseServiceOptions.html" title="A class for customizing the publication options for a service advertised.">AdvertiseServiceOptions</a>());</div>
+<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span> </div>
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>    <span class="keyword">public</span>: <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ReplyT&gt;</div>
+<div class="line"><a id="l00556" name="l00556"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#a04d6c8e855cfdfe972e6399cc4e3a767">  556</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#a04d6c8e855cfdfe972e6399cc4e3a767" title="Advertise a new service without input parameter. In this version the callback is a lambda function.">Advertise</a>(</div>
+<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>        <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a>&lt;<span class="keywordtype">bool</span>(ReplyT &amp;_reply)&gt; &amp;_callback,</div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>        <span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1transport_1_1AdvertiseServiceOptions.html" title="A class for customizing the publication options for a service advertised.">AdvertiseServiceOptions</a> &amp;_options = <a class="code hl_class" href="classgz_1_1transport_1_1AdvertiseServiceOptions.html" title="A class for customizing the publication options for a service advertised.">AdvertiseServiceOptions</a>());</div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span> </div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>    <span class="keyword">public</span>: <span class="keyword">template</span>&lt;<span class="keyword">typename</span> RequestT&gt;</div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#a6991f124fa7eaecf4966ad67f13aedca">  578</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#a6991f124fa7eaecf4966ad67f13aedca" title="Advertise a new service without any output parameter. In this version the callback is a lambda functi...">Advertise</a>(</div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>        <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a>&lt;<span class="keywordtype">void</span>(<span class="keyword">const</span> RequestT &amp;_request)&gt; &amp;_callback,</div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>        <span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1transport_1_1AdvertiseServiceOptions.html" title="A class for customizing the publication options for a service advertised.">AdvertiseServiceOptions</a> &amp;_options = <a class="code hl_class" href="classgz_1_1transport_1_1AdvertiseServiceOptions.html" title="A class for customizing the publication options for a service advertised.">AdvertiseServiceOptions</a>());</div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span> </div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>    <span class="keyword">public</span>: <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ClassT, <span class="keyword">typename</span> RequestT, <span class="keyword">typename</span> ReplyT&gt;</div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#ad5fb2eca298cbd66aab3490e5966e72f">  603</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#ad5fb2eca298cbd66aab3490e5966e72f" title="Advertise a new service. In this version the callback is a member function.">Advertise</a>(</div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>        <span class="keywordtype">bool</span>(ClassT::*_callback)(const RequestT &amp;_request, ReplyT &amp;_reply),</div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>        ClassT *_obj,</div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>        const <a class="code hl_class" href="classgz_1_1transport_1_1AdvertiseServiceOptions.html" title="A class for customizing the publication options for a service advertised.">AdvertiseServiceOptions</a> &amp;_options = <a class="code hl_class" href="classgz_1_1transport_1_1AdvertiseServiceOptions.html" title="A class for customizing the publication options for a service advertised.">AdvertiseServiceOptions</a>());</div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span> </div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>    <span class="keyword">public</span>: <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ClassT, <span class="keyword">typename</span> ReplyT&gt;</div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#a17b2c056f4e278025c088fe9d55c6d35">  628</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#a17b2c056f4e278025c088fe9d55c6d35" title="Advertise a new service without input parameter. In this version the callback is a member function.">Advertise</a>(</div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>        <span class="keywordtype">bool</span>(ClassT::*_callback)(ReplyT &amp;_reply),</div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>        ClassT *_obj,</div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>        const <a class="code hl_class" href="classgz_1_1transport_1_1AdvertiseServiceOptions.html" title="A class for customizing the publication options for a service advertised.">AdvertiseServiceOptions</a> &amp;_options = <a class="code hl_class" href="classgz_1_1transport_1_1AdvertiseServiceOptions.html" title="A class for customizing the publication options for a service advertised.">AdvertiseServiceOptions</a>());</div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span> </div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>    <span class="keyword">public</span>: <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ClassT, <span class="keyword">typename</span> RequestT&gt;</div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#acabcd877db90118d5c656467f51ded9c">  652</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#acabcd877db90118d5c656467f51ded9c" title="Advertise a new service without any output parameter. In this version the callback is a member functi...">Advertise</a>(</div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>        <span class="keywordtype">void</span>(ClassT::*_callback)(const RequestT &amp;_request),</div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>        ClassT *_obj,</div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>        const <a class="code hl_class" href="classgz_1_1transport_1_1AdvertiseServiceOptions.html" title="A class for customizing the publication options for a service advertised.">AdvertiseServiceOptions</a> &amp;_options = <a class="code hl_class" href="classgz_1_1transport_1_1AdvertiseServiceOptions.html" title="A class for customizing the publication options for a service advertised.">AdvertiseServiceOptions</a>());</div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span> </div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#ad2f0b7e3657a556033859600d49d3ee9">  660</a></span>    <span class="keyword">public</span>: <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::string&gt;</a> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#ad2f0b7e3657a556033859600d49d3ee9" title="Get the list of services advertised by this node.">AdvertisedServices</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span> </div>
+<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>    <span class="keyword">public</span>: <span class="keyword">template</span>&lt;<span class="keyword">typename</span> RequestT, <span class="keyword">typename</span> ReplyT&gt;</div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#a027934cd5ed4802842fba02ea5cd6847">  674</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#a027934cd5ed4802842fba02ea5cd6847" title="Request a new service using a non-blocking call. In this version the callback is a free function.">Request</a>(</div>
+<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>        <span class="keyword">const</span> RequestT &amp;_request,</div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>        <span class="keywordtype">void</span>(*_callback)(<span class="keyword">const</span> ReplyT &amp;_reply, <span class="keyword">const</span> <span class="keywordtype">bool</span> _result));</div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span> </div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>    <span class="keyword">public</span>: <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ReplyT&gt;</div>
+<div class="line"><a id="l00690" name="l00690"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#aa966e7726f4580b42a6247191a7720f2">  690</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#aa966e7726f4580b42a6247191a7720f2" title="Request a new service without input parameter using a non-blocking call. In this version the callback...">Request</a>(</div>
+<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>        <span class="keywordtype">void</span>(*_callback)(<span class="keyword">const</span> ReplyT &amp;_reply, <span class="keyword">const</span> <span class="keywordtype">bool</span> _result));</div>
+<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span> </div>
+<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>    <span class="keyword">public</span>: <span class="keyword">template</span>&lt;<span class="keyword">typename</span> RequestT, <span class="keyword">typename</span> ReplyT&gt;</div>
+<div class="line"><a id="l00706" name="l00706"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#a1fd711627ccbe1805ff65573670caddc">  706</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#a1fd711627ccbe1805ff65573670caddc" title="Request a new service using a non-blocking call. In this version the callback is a lambda function.">Request</a>(</div>
+<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>        <span class="keyword">const</span> RequestT &amp;_request,</div>
+<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>        <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a>&lt;<span class="keywordtype">void</span>(<span class="keyword">const</span> ReplyT &amp;_reply,</div>
+<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>                           <span class="keyword">const</span> <span class="keywordtype">bool</span> _result)&gt; &amp;_callback);</div>
+<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span> </div>
+<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>    <span class="keyword">public</span>: <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ReplyT&gt;</div>
+<div class="line"><a id="l00723" name="l00723"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#a32204036b75e84f5c495f77bb932c0fa">  723</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#a32204036b75e84f5c495f77bb932c0fa" title="Request a new service without input parameter using a non-blocking call. In this version the callback...">Request</a>(</div>
+<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>        <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a>&lt;<span class="keywordtype">void</span>(<span class="keyword">const</span> ReplyT &amp;_reply,</div>
+<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>                           <span class="keyword">const</span> <span class="keywordtype">bool</span> _result)&gt; &amp;_callback);</div>
+<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span> </div>
+<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>    <span class="keyword">public</span>: <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ClassT, <span class="keyword">typename</span> RequestT, <span class="keyword">typename</span> ReplyT&gt;</div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#acc6dc45b18f6c9198fe448a281910941">  741</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#acc6dc45b18f6c9198fe448a281910941" title="Request a new service using a non-blocking call. In this version the callback is a member function.">Request</a>(</div>
+<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>        <span class="keyword">const</span> RequestT &amp;_request,</div>
+<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>        <span class="keywordtype">void</span>(ClassT::*_callback)(const ReplyT &amp;_reply, const bool _result),</div>
+<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>        ClassT *_obj);</div>
+<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span> </div>
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>    <span class="keyword">public</span>: <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ClassT, <span class="keyword">typename</span> ReplyT&gt;</div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#a79a12465c02a425b350f39c7fdc79f55">  759</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#a79a12465c02a425b350f39c7fdc79f55" title="Request a new service without input parameter using a non-blocking call. In this version the callback...">Request</a>(</div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>        <span class="keywordtype">void</span>(ClassT::*_callback)(const ReplyT &amp;_reply, const bool _result),</div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>        ClassT *_obj);</div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span> </div>
+<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>    <span class="keyword">public</span>: <span class="keyword">template</span>&lt;<span class="keyword">typename</span> RequestT, <span class="keyword">typename</span> ReplyT&gt;</div>
+<div class="line"><a id="l00774" name="l00774"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#a24cad71cc4fa66f1ce67ea55b9fcd47c">  774</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#a24cad71cc4fa66f1ce67ea55b9fcd47c" title="Request a new service using a blocking call.">Request</a>(</div>
+<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>        <span class="keyword">const</span> RequestT &amp;_request,</div>
+<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> &amp;_timeout,</div>
+<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>        ReplyT &amp;_reply,</div>
+<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>        <span class="keywordtype">bool</span> &amp;_result);</div>
+<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span> </div>
+<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>    <span class="keyword">public</span>: <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ReplyT&gt;</div>
+<div class="line"><a id="l00790" name="l00790"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#a1e37eb77cdb5c047b63216e385af1648">  790</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#a1e37eb77cdb5c047b63216e385af1648" title="Request a new service without input parameter using a blocking call.">Request</a>(</div>
+<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> &amp;_timeout,</div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>        ReplyT &amp;_reply,</div>
+<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>        <span class="keywordtype">bool</span> &amp;_result);</div>
+<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span> </div>
+<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>    <span class="keyword">public</span>: <span class="keyword">template</span>&lt;<span class="keyword">typename</span> RequestT&gt;</div>
+<div class="line"><a id="l00802" name="l00802"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#aeb8d70e767224e30c3a37bb84de8a272">  802</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#aeb8d70e767224e30c3a37bb84de8a272" title="Request a new service without waiting for response.">Request</a>(<span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic, <span class="keyword">const</span> RequestT &amp;_request);</div>
+<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span> </div>
+<div class="line"><a id="l00818" name="l00818"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#a7bcf4d1979fb3b66ff599314e3e5e1ad">  818</a></span>    <span class="keyword">public</span>: <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#a7bcf4d1979fb3b66ff599314e3e5e1ad" title="Request a new service using a blocking call. This request function expects a serialized protobuf mess...">RequestRaw</a>(<span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>                <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_request, <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_requestType,</div>
+<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>                <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_responseType, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> _timeout,</div>
+<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>                <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_response,</div>
+<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>                <span class="keywordtype">bool</span> &amp;_result);</div>
+<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span> </div>
+<div class="line"><a id="l00827" name="l00827"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#a7323cc3587718eca814fc95f9b61806c">  827</a></span>    <span class="keyword">public</span>: <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#a7323cc3587718eca814fc95f9b61806c" title="Unadvertise a service.">UnadvertiseSrv</a>(<span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic);</div>
+<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span> </div>
+<div class="line"><a id="l00835" name="l00835"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#af36626e285ff2fdabd84be0e9217b640">  835</a></span>    <span class="keyword">public</span>: <span class="keywordtype">void</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#af36626e285ff2fdabd84be0e9217b640" title="Get the list of topics currently advertised in the network. Note that this function can block for som...">TopicList</a>(<a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::string&gt;</a> &amp;_topics) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span> </div>
+<div class="line"><a id="l00841" name="l00841"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#a4b9d9085f03dba63b0ffa22fb6a9cad5">  841</a></span>    <span class="keyword">public</span>: <span class="keywordtype">bool</span> GZ_DEPRECATED(13) TopicInfo(const <a class="code hl_namespace" href="namespacestd.html" title="STL namespace.">std</a>::<span class="keywordtype">string</span> &amp;_topic,</div>
+<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span>                           <a class="code hl_namespace" href="namespacestd.html" title="STL namespace.">std</a>::vector&lt;<a class="code hl_class" href="classgz_1_1transport_1_1MessagePublisher.html" title="This class stores all the information about a message publisher.">MessagePublisher</a>&gt; &amp;_publishers) const;</div>
+<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span> </div>
+<div class="line"><a id="l00849" name="l00849"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#ab698a5c60a8936be648766058d26d548">  849</a></span>    public: <span class="keywordtype">bool</span> TopicInfo(const <a class="code hl_namespace" href="namespacestd.html" title="STL namespace.">std</a>::<span class="keywordtype">string</span> &amp;_topic,</div>
+<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span>                           <a class="code hl_namespace" href="namespacestd.html" title="STL namespace.">std</a>::vector&lt;<a class="code hl_class" href="classgz_1_1transport_1_1MessagePublisher.html" title="This class stores all the information about a message publisher.">MessagePublisher</a>&gt; &amp;_publishers,</div>
+<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span>                           <a class="code hl_namespace" href="namespacestd.html" title="STL namespace.">std</a>::vector&lt;<a class="code hl_class" href="classgz_1_1transport_1_1MessagePublisher.html" title="This class stores all the information about a message publisher.">MessagePublisher</a>&gt; &amp;_subscribers) const;</div>
+<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span> </div>
+<div class="line"><a id="l00859" name="l00859"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#a6dd5279b3b53b4191a2475b91cef2629">  859</a></span>    public: <span class="keywordtype">void</span> ServiceList(<a class="code hl_namespace" href="namespacestd.html" title="STL namespace.">std</a>::vector&lt;<a class="code hl_namespace" href="namespacestd.html" title="STL namespace.">std</a>::<span class="keywordtype">string</span>&gt; &amp;_services) const;</div>
+<div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span> </div>
+<div class="line"><a id="l00865" name="l00865"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#ab7fd1be9ebf8c147e4e848a8c69ad597">  865</a></span>    public: <span class="keywordtype">bool</span> ServiceInfo(</div>
+<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span>        const <a class="code hl_namespace" href="namespacestd.html" title="STL namespace.">std</a>::<span class="keywordtype">string</span> &amp;_service,</div>
+<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span>        <a class="code hl_namespace" href="namespacestd.html" title="STL namespace.">std</a>::vector&lt;<a class="code hl_class" href="classgz_1_1transport_1_1ServicePublisher.html" title="This class stores all the information about a service publisher.">ServicePublisher</a>&gt; &amp;_publishers) const;</div>
+<div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span> </div>
+<div class="foldopen" id="foldopen00870" data-start="{" data-end="};">
+<div class="line"><a id="l00870" name="l00870"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#a60ca903e959d629d9b6b5fcc6d65ad1d">  870</a></span>    public: enum class <a class="code hl_enumeration" href="classgz_1_1transport_1_1Node.html#a60ca903e959d629d9b6b5fcc6d65ad1d" title="Result of a call to ResolveServiceTypes().">ServiceTypeResolution</a></div>
+<div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span>    {</div>
+<div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span>      kResolved = 0,</div>
+<div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span> </div>
+<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span>      kInvalidService,</div>
+<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span> </div>
+<div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span>      kNoProviders,</div>
+<div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span> </div>
+<div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span>      kAmbiguousTypes,</div>
+<div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span> </div>
+<div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span>      kIncompatibleTypes,</div>
+<div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span>    };</div>
+</div>
+<div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span> </div>
+<div class="line"><a id="l00913" name="l00913"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#a041caef45e7ecf8e48a42f7353773770">  913</a></span>    <span class="keyword">public</span>: <a class="code hl_enumeration" href="classgz_1_1transport_1_1Node.html#a60ca903e959d629d9b6b5fcc6d65ad1d" title="Result of a call to ResolveServiceTypes().">ServiceTypeResolution</a> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#a041caef45e7ecf8e48a42f7353773770" title="Resolve the request and response types advertised by the providers of a service. Only the types that ...">ResolveServiceTypes</a>(</div>
+<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_service,</div>
+<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span>        <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_reqType,</div>
+<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>        <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_repType,</div>
+<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> _timeoutMs = 0) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span> </div>
+<div class="line"><a id="l00932" name="l00932"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#a5a5a47f6ab446d0f635c44d79a17a836">  932</a></span>    <span class="keyword">public</span>: <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#a5a5a47f6ab446d0f635c44d79a17a836" title="Subscribe to a topic registering a callback. The callback must accept a std::string to represent the ...">SubscribeRaw</a>(</div>
+<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span>      <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span>      <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">RawCallback</a> &amp;_callback,</div>
+<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>      <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_msgType = kGenericMessageType,</div>
+<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>      <span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1transport_1_1SubscribeOptions.html" title="A class to provide different options for a subscription.">SubscribeOptions</a> &amp;_opts = <a class="code hl_class" href="classgz_1_1transport_1_1SubscribeOptions.html" title="A class to provide different options for a subscription.">SubscribeOptions</a>());</div>
+<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span> </div>
+<div class="line"><a id="l00940" name="l00940"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#a36f5b120acfb62a8cd9fb86554afdac0">  940</a></span>    <span class="keyword">public</span>: <span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1transport_1_1NodeOptions.html" title="A class for customizing the behavior of the Node. E.g.: Set a custom namespace or a partition name.">NodeOptions</a> &amp;<a class="code hl_function" href="classgz_1_1transport_1_1Node.html#a36f5b120acfb62a8cd9fb86554afdac0" title="Get the reference to the current node options.">Options</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span> </div>
+<div class="line"><a id="l00948" name="l00948"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#a747b3fc13017610dec50e6b367368215">  948</a></span>    <span class="keyword">public</span>: <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#a747b3fc13017610dec50e6b367368215" title="Turn topic statistics on or off.">EnableStats</a>(<span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic, <span class="keywordtype">bool</span> _enable,</div>
+<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span>                <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_publicationTopic = <span class="stringliteral">&quot;/statistics&quot;</span>,</div>
+<div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span>                uint64_t _publicationRate = 1);</div>
+<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span> </div>
+<div class="line"><a id="l00958" name="l00958"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#ab6bea29832d73ef9912d01a98ea42a19">  958</a></span>    <span class="keyword">public</span>: std::optional&lt;TopicStatistics&gt; <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#ab6bea29832d73ef9912d01a98ea42a19" title="Get the current statistics for a topic. Statistics must have been enabled using the EnableStatistics ...">TopicStats</a>(</div>
+<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span>                <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span> </div>
+<div class="line"><a id="l00967" name="l00967"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#a141ffbcd254478db4c5ac918c47fc594">  967</a></span>    <span class="keyword">public</span>: <span class="keywordtype">void</span> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#a141ffbcd254478db4c5ac918c47fc594" title="Adds a unicast relay IP. All nodes in this process will send UDP unicast traffic to the address to co...">AddGlobalRelay</a>(<span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>&amp; _relayAddress);</div>
+<div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span> </div>
+<div class="line"><a id="l00972" name="l00972"></a><span class="lineno"><a class="line" href="classgz_1_1transport_1_1Node.html#ada0374fe589ed1dcadb571065a05b80b">  972</a></span>    <span class="keyword">public</span>: <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::string&gt;</a> <a class="code hl_function" href="classgz_1_1transport_1_1Node.html#ada0374fe589ed1dcadb571065a05b80b" title="Gets the relay addresses configured for all nodes in this process.">GlobalRelays</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span> </div>
+<div class="line"><a id="l00977" name="l00977"></a><span class="lineno">  977</span>    <span class="keyword">private</span>: <a class="code hl_class" href="classgz_1_1transport_1_1NodeShared.html" title="Private data for the Node class. This class should not be directly used. You should use the Node clas...">NodeShared</a> *Shared() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00978" name="l00978"></a><span class="lineno">  978</span> </div>
+<div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span>    <span class="keyword">private</span>: <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;NodeUuid() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00982" name="l00982"></a><span class="lineno">  982</span> </div>
+<div class="line"><a id="l00985" name="l00985"></a><span class="lineno">  985</span>    <span class="keyword">private</span>: <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/container/unordered_set.html">std::unordered_set&lt;std::string&gt;</a> &amp;TopicsSubscribed() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00986" name="l00986"></a><span class="lineno">  986</span> </div>
+<div class="line"><a id="l00989" name="l00989"></a><span class="lineno">  989</span>    <span class="keyword">private</span>: <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/container/unordered_set.html">std::unordered_set&lt;std::string&gt;</a> &amp;SrvsAdvertised() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00990" name="l00990"></a><span class="lineno">  990</span> </div>
+<div class="line"><a id="l00994" name="l00994"></a><span class="lineno">  994</span>    <span class="keyword">private</span>: <span class="keywordtype">bool</span> SubscribeHelper(<span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_fullyQualifiedTopic);</div>
+<div class="line"><a id="l00995" name="l00995"></a><span class="lineno">  995</span> </div>
+<div class="line"><a id="l01005" name="l01005"></a><span class="lineno"> 1005</span>    <span class="keyword">private</span>: <span class="keyword">template</span>&lt;<span class="keyword">typename</span> MessageT&gt;</div>
+<div class="line"><a id="l01006" name="l01006"></a><span class="lineno"> 1006</span>    <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr&lt;SubscriptionHandler&lt;MessageT&gt;</a>&gt; SubscribeImpl(</div>
+<div class="line"><a id="l01007" name="l01007"></a><span class="lineno"> 1007</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l01008" name="l01008"></a><span class="lineno"> 1008</span>        <span class="keywordtype">void</span>(*_callback)(<span class="keyword">const</span> MessageT &amp;_msg),</div>
+<div class="line"><a id="l01009" name="l01009"></a><span class="lineno"> 1009</span>        <span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1transport_1_1SubscribeOptions.html" title="A class to provide different options for a subscription.">SubscribeOptions</a> &amp;_opts = <a class="code hl_class" href="classgz_1_1transport_1_1SubscribeOptions.html" title="A class to provide different options for a subscription.">SubscribeOptions</a>());</div>
+<div class="line"><a id="l01010" name="l01010"></a><span class="lineno"> 1010</span> </div>
+<div class="line"><a id="l01019" name="l01019"></a><span class="lineno"> 1019</span>    <span class="keyword">private</span>: <span class="keyword">template</span>&lt;<span class="keyword">typename</span> MessageT&gt;</div>
+<div class="line"><a id="l01020" name="l01020"></a><span class="lineno"> 1020</span>    <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr&lt;SubscriptionHandler&lt;MessageT&gt;</a>&gt; SubscribeImpl(</div>
+<div class="line"><a id="l01021" name="l01021"></a><span class="lineno"> 1021</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l01022" name="l01022"></a><span class="lineno"> 1022</span>        <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a>&lt;<span class="keywordtype">void</span>(<span class="keyword">const</span> MessageT &amp;_msg)&gt; _callback,</div>
+<div class="line"><a id="l01023" name="l01023"></a><span class="lineno"> 1023</span>        <span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1transport_1_1SubscribeOptions.html" title="A class to provide different options for a subscription.">SubscribeOptions</a> &amp;_opts = <a class="code hl_class" href="classgz_1_1transport_1_1SubscribeOptions.html" title="A class to provide different options for a subscription.">SubscribeOptions</a>());</div>
+<div class="line"><a id="l01024" name="l01024"></a><span class="lineno"> 1024</span> </div>
+<div class="line"><a id="l01035" name="l01035"></a><span class="lineno"> 1035</span>    <span class="keyword">private</span>: <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ClassT, <span class="keyword">typename</span> MessageT&gt;</div>
+<div class="line"><a id="l01036" name="l01036"></a><span class="lineno"> 1036</span>    <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr&lt;SubscriptionHandler&lt;MessageT&gt;</a>&gt; SubscribeImpl(</div>
+<div class="line"><a id="l01037" name="l01037"></a><span class="lineno"> 1037</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l01038" name="l01038"></a><span class="lineno"> 1038</span>        <span class="keywordtype">void</span>(ClassT::*_callback)(const MessageT &amp;_msg),</div>
+<div class="line"><a id="l01039" name="l01039"></a><span class="lineno"> 1039</span>        ClassT *_obj,</div>
+<div class="line"><a id="l01040" name="l01040"></a><span class="lineno"> 1040</span>        const <a class="code hl_class" href="classgz_1_1transport_1_1SubscribeOptions.html" title="A class to provide different options for a subscription.">SubscribeOptions</a> &amp;_opts = <a class="code hl_class" href="classgz_1_1transport_1_1SubscribeOptions.html" title="A class to provide different options for a subscription.">SubscribeOptions</a>());</div>
+<div class="line"><a id="l01041" name="l01041"></a><span class="lineno"> 1041</span> </div>
+<div class="line"><a id="l01052" name="l01052"></a><span class="lineno"> 1052</span>    <span class="keyword">private</span>: <span class="keyword">template</span>&lt;<span class="keyword">typename</span> MessageT&gt;</div>
+<div class="line"><a id="l01053" name="l01053"></a><span class="lineno"> 1053</span>    <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr&lt;SubscriptionHandler&lt;MessageT&gt;</a>&gt; SubscribeImpl(</div>
+<div class="line"><a id="l01054" name="l01054"></a><span class="lineno"> 1054</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l01055" name="l01055"></a><span class="lineno"> 1055</span>        <span class="keywordtype">void</span>(*_callback)(<span class="keyword">const</span> MessageT &amp;_msg, <span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1transport_1_1MessageInfo.html" title="A class that provides information about the message received.">MessageInfo</a> &amp;_info),</div>
+<div class="line"><a id="l01056" name="l01056"></a><span class="lineno"> 1056</span>        <span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1transport_1_1SubscribeOptions.html" title="A class to provide different options for a subscription.">SubscribeOptions</a> &amp;_opts = <a class="code hl_class" href="classgz_1_1transport_1_1SubscribeOptions.html" title="A class to provide different options for a subscription.">SubscribeOptions</a>());</div>
+<div class="line"><a id="l01057" name="l01057"></a><span class="lineno"> 1057</span> </div>
+<div class="line"><a id="l01067" name="l01067"></a><span class="lineno"> 1067</span>    <span class="keyword">private</span>: <span class="keyword">template</span>&lt;<span class="keyword">typename</span> MessageT&gt;</div>
+<div class="line"><a id="l01068" name="l01068"></a><span class="lineno"> 1068</span>    <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr&lt;SubscriptionHandler&lt;MessageT&gt;</a>&gt; SubscribeImpl(</div>
+<div class="line"><a id="l01069" name="l01069"></a><span class="lineno"> 1069</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l01070" name="l01070"></a><span class="lineno"> 1070</span>        <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a>&lt;<span class="keywordtype">void</span>(<span class="keyword">const</span> MessageT &amp;_msg,</div>
+<div class="line"><a id="l01071" name="l01071"></a><span class="lineno"> 1071</span>                           <span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1transport_1_1MessageInfo.html" title="A class that provides information about the message received.">MessageInfo</a> &amp;_info)&gt; _callback,</div>
+<div class="line"><a id="l01072" name="l01072"></a><span class="lineno"> 1072</span>        <span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1transport_1_1SubscribeOptions.html" title="A class to provide different options for a subscription.">SubscribeOptions</a> &amp;_opts = <a class="code hl_class" href="classgz_1_1transport_1_1SubscribeOptions.html" title="A class to provide different options for a subscription.">SubscribeOptions</a>());</div>
+<div class="line"><a id="l01073" name="l01073"></a><span class="lineno"> 1073</span> </div>
+<div class="line"><a id="l01085" name="l01085"></a><span class="lineno"> 1085</span>    <span class="keyword">private</span>: <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ClassT, <span class="keyword">typename</span> MessageT&gt;</div>
+<div class="line"><a id="l01086" name="l01086"></a><span class="lineno"> 1086</span>    <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr&lt;SubscriptionHandler&lt;MessageT&gt;</a>&gt; SubscribeImpl(</div>
+<div class="line"><a id="l01087" name="l01087"></a><span class="lineno"> 1087</span>        <span class="keyword">const</span> <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;_topic,</div>
+<div class="line"><a id="l01088" name="l01088"></a><span class="lineno"> 1088</span>        <span class="keywordtype">void</span>(ClassT::*_callback)(const MessageT &amp;_msg,</div>
+<div class="line"><a id="l01089" name="l01089"></a><span class="lineno"> 1089</span>                                 const <a class="code hl_class" href="classgz_1_1transport_1_1MessageInfo.html" title="A class that provides information about the message received.">MessageInfo</a> &amp;_info),</div>
+<div class="line"><a id="l01090" name="l01090"></a><span class="lineno"> 1090</span>        ClassT *_obj,</div>
+<div class="line"><a id="l01091" name="l01091"></a><span class="lineno"> 1091</span>        const <a class="code hl_class" href="classgz_1_1transport_1_1SubscribeOptions.html" title="A class to provide different options for a subscription.">SubscribeOptions</a> &amp;_opts = <a class="code hl_class" href="classgz_1_1transport_1_1SubscribeOptions.html" title="A class to provide different options for a subscription.">SubscribeOptions</a>());</div>
+<div class="line"><a id="l01092" name="l01092"></a><span class="lineno"> 1092</span> </div>
+<div class="line"><a id="l01093" name="l01093"></a><span class="lineno"> 1093</span><span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a id="l01094" name="l01094"></a><span class="lineno"> 1094</span><span class="comment">// Disable warning C4251 which is triggered by</span></div>
+<div class="line"><a id="l01095" name="l01095"></a><span class="lineno"> 1095</span><span class="comment">// std::unique_ptr</span></div>
+<div class="line"><a id="l01096" name="l01096"></a><span class="lineno"> 1096</span><span class="preprocessor">#pragma warning(push)</span></div>
+<div class="line"><a id="l01097" name="l01097"></a><span class="lineno"> 1097</span><span class="preprocessor">#pragma warning(disable: 4251)</span></div>
+<div class="line"><a id="l01098" name="l01098"></a><span class="lineno"> 1098</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01101" name="l01101"></a><span class="lineno"> 1101</span>    <span class="keyword">private</span>: <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr&lt;transport::NodePrivate&gt;</a> dataPtr;</div>
+<div class="line"><a id="l01102" name="l01102"></a><span class="lineno"> 1102</span><span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a id="l01103" name="l01103"></a><span class="lineno"> 1103</span><span class="preprocessor">#pragma warning(pop)</span></div>
+<div class="line"><a id="l01104" name="l01104"></a><span class="lineno"> 1104</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01105" name="l01105"></a><span class="lineno"> 1105</span>  };</div>
+</div>
+<div class="line"><a id="l01106" name="l01106"></a><span class="lineno"> 1106</span>  }</div>
+<div class="line"><a id="l01107" name="l01107"></a><span class="lineno"> 1107</span>}</div>
+<div class="line"><a id="l01108" name="l01108"></a><span class="lineno"> 1108</span> </div>
+<div class="line"><a id="l01109" name="l01109"></a><span class="lineno"> 1109</span><span class="preprocessor">#include &quot;gz/transport/detail/Node.hh&quot;</span></div>
+<div class="line"><a id="l01110" name="l01110"></a><span class="lineno"> 1110</span> </div>
+<div class="line"><a id="l01111" name="l01111"></a><span class="lineno"> 1111</span><span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+      </div>
+    </main>
+  </div>
+</body>

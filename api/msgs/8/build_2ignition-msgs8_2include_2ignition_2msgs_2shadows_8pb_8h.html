@@ -1,0 +1,347 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <meta name="keywords" content="Gazebo Msgs">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Gazebo Msgs: shadows.pb.h File Reference</title>
+    <script type="text/javascript" src="https://gazebosim.org/assets/doxygen/dynsections.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <link rel="icon" type="image/x-icon" href="https://gazebosim.org/assets/icon/favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.deep_orange-blue.min.css" />
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.min.js"></script>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> </script>
+    <link href="https://gazebosim.org/assets/doxygen/doxygen.css" rel="stylesheet" type="text/css">
+  </head>
+    <script type="text/javascript">
+      /* Replace all the "permalink" &#9670;&nbsp; icons with a unicode link
+        symbol.*/
+      $(document).ready(function() {
+        var elems = document.getElementsByClassName("permalink");
+        for (var i = 0; i < elems.length; ++i) {
+          elems[i].firstChild.innerHTML="&#x1f517;";
+          elems[i].firstChild.style.fontSize="18px";
+        }
+      });
+    </script>
+  </head>
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+    <div class="mdl-layout__drawer mdl-color--grey-100 mdl-color-text--blue-grey-50">
+      <header class="mdl-color--grey-100">
+        <a href="index.html"><img width="60px" src="https://gazebosim.org/assets/doxygen/gazebo_logo.svg"/></a>
+        <h1 class="project_title">Gazebo Msgs</h1>
+        <h2>API Reference</h2>
+        <div class="version">
+        8.7.1
+        </div>
+      </header>
+      <!-- NOTE: If you add a link to a doxygen generated page, then make
+                 sure to update the required_html_fils list in
+                 IgnCreateDocs.cmake -->
+      <nav class="ign-navigation mdl-navigation">
+        <a class="mdl-navigation__link" href="tutorials.html">
+          <i class="mdl-color-text--grey-400 material-icons"
+             role="presentation">insert_drive_file</i>Tutorials</a>
+        <a id="class_menu" class="mdl-navigation__link" href="#">
+          <i class="mdl-color-text--grey-400 material-icons"
+             role="presentation">library_books</i>Classes</a>
+        <a id="namespaces_menu"class="mdl-navigation__link" href="#">
+          <i class="mdl-color-text--grey-400 material-icons"
+             role="presentation">toc</i>Namespaces</a>
+        <a class="mdl-navigation__link" href="files.html">
+          <i class="mdl-color-text--grey-400 material-icons"
+             role="presentation">insert_drive_file</i>Files</a>
+        <a class="mdl-navigation__link" target="_blank"
+           href="http://gazebosim.org">
+          <i class="mdl-color-text--grey-400 material-icons"
+             role="presentation">launch</i>Gazebo Website</a>
+      </nav>
+      <!-- classes sub menu -->
+      <ul for="class_menu" class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect mdl-navigation">
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link" href="classes.html">Index</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="annotated.html">List</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="hierarchy.html">Hierarchy</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="functions.html">Members: All</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="functions_func.html">Members: Functions</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="functions_vars.html">Members: Variables</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="functions_type.html">Members: Typedefs</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="functions_enum.html">Members: Enumerations</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="functions_eval.html">Members: Enumerator</a>
+        </li>
+      </ul>
+      <!-- namespaces sub menu -->
+      <ul for="namespaces_menu" class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect mdl-navigation">
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespaces.html">List</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespacemembers.html">Members</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespacemembers_func.html">Functions</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespacemembers_type.html">Typedefs</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespacemembers_vars.html">Variables</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespacemembers_enum.html">Enumerations</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespacemembers_eval.html">Enumerator</a>
+        </li>
+      </ul>
+    </div>
+    <main class="mdl-layout__content mdl-color--white">
+    <div id="top">
+<!-- Generated by Doxygen 1.9.1 -->
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_1fbef9969d57a33c0d0fee07d766b343.html">include</a></li><li class="navelem"><a class="el" href="dir_8e48496dd7a9b784585b144a68e101eb.html">ignition</a></li><li class="navelem"><a class="el" href="dir_32419cf60cdac792f4b7fabd32d16484.html">msgs</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">build/ignition-msgs8/include/ignition/msgs/shadows.pb.h File Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;google/protobuf/port_def.inc&gt;</code><br />
+<code>#include &lt;google/protobuf/port_undef.inc&gt;</code><br />
+<code>#include &lt;google/protobuf/io/coded_stream.h&gt;</code><br />
+<code>#include &lt;google/protobuf/arena.h&gt;</code><br />
+<code>#include &lt;google/protobuf/arenastring.h&gt;</code><br />
+<code>#include &lt;google/protobuf/generated_message_table_driven.h&gt;</code><br />
+<code>#include &lt;google/protobuf/generated_message_util.h&gt;</code><br />
+<code>#include &lt;google/protobuf/inlined_string_field.h&gt;</code><br />
+<code>#include &lt;google/protobuf/metadata_lite.h&gt;</code><br />
+<code>#include &lt;google/protobuf/generated_message_reflection.h&gt;</code><br />
+<code>#include &lt;google/protobuf/message.h&gt;</code><br />
+<code>#include &lt;google/protobuf/repeated_field.h&gt;</code><br />
+<code>#include &lt;google/protobuf/extension_set.h&gt;</code><br />
+<code>#include &lt;google/protobuf/generated_enum_reflection.h&gt;</code><br />
+<code>#include &lt;google/protobuf/unknown_field_set.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="build_2ignition-msgs8_2include_2ignition_2msgs_2color_8pb_8h_source.html">ignition/msgs/color.pb.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="build_2ignition-msgs8_2include_2ignition_2msgs_2header_8pb_8h_source.html">ignition/msgs/header.pb.h</a>&quot;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;<a class="el" href="build_2ignition-msgs8_2include_2ignition_2msgs_2Export_8hh_source.html">ignition/msgs/Export.hh</a>&gt;</code><br />
+</div>
+<p><a href="build_2ignition-msgs8_2include_2ignition_2msgs_2shadows_8pb_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structis__proto__enum_3_01_1_1ignition_1_1msgs_1_1Shadows__ShadowType_01_4.html">is_proto_enum&lt; ::ignition::msgs::Shadows_ShadowType &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classignition_1_1msgs_1_1PROTOBUF__FINAL.html">PROTOBUF_FINAL</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTableStruct__ignition__2fmsgs__2fshadows__2eproto.html">TableStruct_ignition_2fmsgs_2fshadows_2eproto</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespaceignition"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition.html">ignition</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceignition_1_1msgs"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html">ignition::msgs</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceinternal"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html">internal</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ae3174a226bc1c1d5e9291a38a2f18680"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="build_2ignition-msgs8_2include_2ignition_2msgs_2shadows_8pb_8h.html#ae3174a226bc1c1d5e9291a38a2f18680">PROTOBUF_INTERNAL_EXPORT_ignition_2fmsgs_2fshadows_2eproto</a>&#160;&#160;&#160;IGNITION_MSGS_VISIBLE</td></tr>
+<tr class="separator:ae3174a226bc1c1d5e9291a38a2f18680"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ae3101231d0030bbbd4a46101d71daa5d"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; const Shadows &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#ae3101231d0030bbbd4a46101d71daa5d">ConstShadowsSharedPtr</a></td></tr>
+<tr class="separator:ae3101231d0030bbbd4a46101d71daa5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45c506a4f3b229aabdf62a0f61510c1e"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr</a>&lt; const Shadows &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#a45c506a4f3b229aabdf62a0f61510c1e">ConstShadowsUniquePtr</a></td></tr>
+<tr class="separator:a45c506a4f3b229aabdf62a0f61510c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44fb7d02a00d99d41b537a158858221f"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; Shadows &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#a44fb7d02a00d99d41b537a158858221f">ShadowsSharedPtr</a></td></tr>
+<tr class="separator:a44fb7d02a00d99d41b537a158858221f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9de81d3425b262c112cd12b99217fae9"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr</a>&lt; Shadows &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#a9de81d3425b262c112cd12b99217fae9">ShadowsUniquePtr</a></td></tr>
+<tr class="separator:a9de81d3425b262c112cd12b99217fae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a9ea4a9399e366fba269e778e82ffef01"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#a9ea4a9399e366fba269e778e82ffef01">Shadows_ShadowType</a> : int { <br />
+&#160;&#160;<a class="el" href="namespaceignition_1_1msgs.html#a9ea4a9399e366fba269e778e82ffef01ac2bb7901f1655b3dfe33a0e276475cdb">Shadows_ShadowType_STENCIL_ADDITIVE</a> = 0
+, <a class="el" href="namespaceignition_1_1msgs.html#a9ea4a9399e366fba269e778e82ffef01a12badb9858d6102c8ec68bf00514e83b">Shadows_ShadowType_STENCIL_MODULATIVE</a> = 1
+, <a class="el" href="namespaceignition_1_1msgs.html#a9ea4a9399e366fba269e778e82ffef01aebf41f6027b5488a1f1b95a8c2b9ed40">Shadows_ShadowType_TEXTURE_ADDITIVE</a> = 2
+, <a class="el" href="namespaceignition_1_1msgs.html#a9ea4a9399e366fba269e778e82ffef01a8f037cf0097cda8142cf588f88adfb0d">Shadows_ShadowType_TEXTURE_MODULATIVE</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespaceignition_1_1msgs.html#a9ea4a9399e366fba269e778e82ffef01aa5767f4dada70038e917aa08391fb4d7">Shadows_ShadowType_Shadows_ShadowType_INT_MIN_SENTINEL_DO_NOT_USE_</a> = std::numeric_limits&lt;::PROTOBUF_NAMESPACE_ID::int32&gt;::min()
+, <a class="el" href="namespaceignition_1_1msgs.html#a9ea4a9399e366fba269e778e82ffef01a40c6b460e6e5cace355e2e41fa8575d9">Shadows_ShadowType_Shadows_ShadowType_INT_MAX_SENTINEL_DO_NOT_USE_</a> = std::numeric_limits&lt;::PROTOBUF_NAMESPACE_ID::int32&gt;::max()
+<br />
+ }</td></tr>
+<tr class="separator:a9ea4a9399e366fba269e778e82ffef01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a5f3ccd97e3e4c03293cd466e08d68b2e"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a5f3ccd97e3e4c03293cd466e08d68b2e"><td class="memTemplItemLeft" align="right" valign="top">PROTOBUF_NAMESPACE_OPEN IGNITION_MSGS_VISIBLE ::ignition::msgs::Shadows *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="build_2ignition-msgs8_2include_2ignition_2msgs_2shadows_8pb_8h.html#a5f3ccd97e3e4c03293cd466e08d68b2e">Arena::CreateMaybeMessage&lt;::ignition::msgs::Shadows &gt;</a> (Arena *)</td></tr>
+<tr class="separator:a5f3ccd97e3e4c03293cd466e08d68b2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cc1fa2cb8f8aa8dcfb0be2bcb5c16d5"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a8cc1fa2cb8f8aa8dcfb0be2bcb5c16d5"><td class="memTemplItemLeft" align="right" valign="top">const EnumDescriptor *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="build_2ignition-msgs8_2include_2ignition_2msgs_2shadows_8pb_8h.html#a8cc1fa2cb8f8aa8dcfb0be2bcb5c16d5">GetEnumDescriptor&lt; ::ignition::msgs::Shadows_ShadowType &gt;</a> ()</td></tr>
+<tr class="separator:a8cc1fa2cb8f8aa8dcfb0be2bcb5c16d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae060bfc993b519892ebc9b8a72556cbf"><td class="memItemLeft" align="right" valign="top">IGNITION_MSGS_VISIBLEconst ::PROTOBUF_NAMESPACE_ID::EnumDescriptor *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#ae060bfc993b519892ebc9b8a72556cbf">Shadows_ShadowType_descriptor</a> ()</td></tr>
+<tr class="separator:ae060bfc993b519892ebc9b8a72556cbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b1018ea3cdc06dbc035a90a49222f6f"><td class="memItemLeft" align="right" valign="top">IGNITION_MSGS_VISIBLE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#a7b1018ea3cdc06dbc035a90a49222f6f">Shadows_ShadowType_IsValid</a> (int value)</td></tr>
+<tr class="separator:a7b1018ea3cdc06dbc035a90a49222f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac61ef5f72e84908938d783805d11fd60"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac61ef5f72e84908938d783805d11fd60"><td class="memTemplItemLeft" align="right" valign="top">const <a class="elRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#ac61ef5f72e84908938d783805d11fd60">Shadows_ShadowType_Name</a> (T enum_t_value)</td></tr>
+<tr class="separator:ac61ef5f72e84908938d783805d11fd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6efd6cd3aee82cb68116c5684e89620"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#ae6efd6cd3aee82cb68116c5684e89620">Shadows_ShadowType_Parse</a> (const <a class="elRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;name, Shadows_ShadowType *value)</td></tr>
+<tr class="separator:ae6efd6cd3aee82cb68116c5684e89620"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ae1ef28ff6fc92719cfbd143140036bc3"><td class="memItemLeft" align="right" valign="top">IGNITION_MSGS_VISIBLE ShadowsDefaultTypeInternal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#ae1ef28ff6fc92719cfbd143140036bc3">_Shadows_default_instance_</a></td></tr>
+<tr class="separator:ae1ef28ff6fc92719cfbd143140036bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c3abca07a6b8e03b3443e773e7cd032"><td class="memItemLeft" align="right" valign="top">IGNITION_MSGS_VISIBLEconst ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="build_2ignition-msgs8_2include_2ignition_2msgs_2shadows_8pb_8h.html#a1c3abca07a6b8e03b3443e773e7cd032">descriptor_table_ignition_2fmsgs_2fshadows_2eproto</a></td></tr>
+<tr class="separator:a1c3abca07a6b8e03b3443e773e7cd032"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec97c9c687493963fbf833d0b85e82eb"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#aec97c9c687493963fbf833d0b85e82eb">Shadows_ShadowType_ShadowType_ARRAYSIZE</a> = Shadows_ShadowType_ShadowType_MAX + 1</td></tr>
+<tr class="separator:aec97c9c687493963fbf833d0b85e82eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a644e4b11907fff87c374d0af1d32fd8f"><td class="memItemLeft" align="right" valign="top">constexpr Shadows_ShadowType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#a644e4b11907fff87c374d0af1d32fd8f">Shadows_ShadowType_ShadowType_MAX</a> = Shadows_ShadowType_TEXTURE_MODULATIVE</td></tr>
+<tr class="separator:a644e4b11907fff87c374d0af1d32fd8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af033eaf4cae83b072bd684ad9b52f6b0"><td class="memItemLeft" align="right" valign="top">constexpr Shadows_ShadowType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#af033eaf4cae83b072bd684ad9b52f6b0">Shadows_ShadowType_ShadowType_MIN</a> = Shadows_ShadowType_STENCIL_ADDITIVE</td></tr>
+<tr class="separator:af033eaf4cae83b072bd684ad9b52f6b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ae3174a226bc1c1d5e9291a38a2f18680"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3174a226bc1c1d5e9291a38a2f18680">&#9670;&nbsp;</a></span>PROTOBUF_INTERNAL_EXPORT_ignition_2fmsgs_2fshadows_2eproto</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PROTOBUF_INTERNAL_EXPORT_ignition_2fmsgs_2fshadows_2eproto&#160;&#160;&#160;IGNITION_MSGS_VISIBLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a5f3ccd97e3e4c03293cd466e08d68b2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f3ccd97e3e4c03293cd466e08d68b2e">&#9670;&nbsp;</a></span>Arena::CreateMaybeMessage&lt;::ignition::msgs::Shadows &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PROTOBUF_NAMESPACE_OPEN IGNITION_MSGS_VISIBLE ::ignition::msgs::Shadows* Arena::CreateMaybeMessage&lt;::ignition::msgs::Shadows &gt; </td>
+          <td>(</td>
+          <td class="paramtype">Arena *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8cc1fa2cb8f8aa8dcfb0be2bcb5c16d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cc1fa2cb8f8aa8dcfb0be2bcb5c16d5">&#9670;&nbsp;</a></span>GetEnumDescriptor&lt; ::ignition::msgs::Shadows_ShadowType &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const EnumDescriptor* GetEnumDescriptor&lt; ::<a class="el" href="namespaceignition_1_1msgs.html#a9ea4a9399e366fba269e778e82ffef01">ignition::msgs::Shadows_ShadowType</a> &gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="namespaceignition_1_1msgs.html#ae060bfc993b519892ebc9b8a72556cbf">ignition::msgs::Shadows_ShadowType_descriptor()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a1c3abca07a6b8e03b3443e773e7cd032"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c3abca07a6b8e03b3443e773e7cd032">&#9670;&nbsp;</a></span>descriptor_table_ignition_2fmsgs_2fshadows_2eproto</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IGNITION_MSGS_VISIBLEconst ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ignition_2fmsgs_2fshadows_2eproto</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="classignition_1_1msgs_1_1PROTOBUF__FINAL.html#abee10a388b53df255f15fbec07e1ac80">PROTOBUF_FINAL::GetMetadata()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+      </div>
+    </main>
+  </div>
+</body>

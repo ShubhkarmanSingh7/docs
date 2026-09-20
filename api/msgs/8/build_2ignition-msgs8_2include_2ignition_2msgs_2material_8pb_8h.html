@@ -1,0 +1,450 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <meta name="keywords" content="Gazebo Msgs">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Gazebo Msgs: material.pb.h File Reference</title>
+    <script type="text/javascript" src="https://gazebosim.org/assets/doxygen/dynsections.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <link rel="icon" type="image/x-icon" href="https://gazebosim.org/assets/icon/favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.deep_orange-blue.min.css" />
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.min.js"></script>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> </script>
+    <link href="https://gazebosim.org/assets/doxygen/doxygen.css" rel="stylesheet" type="text/css">
+  </head>
+    <script type="text/javascript">
+      /* Replace all the "permalink" &#9670;&nbsp; icons with a unicode link
+        symbol.*/
+      $(document).ready(function() {
+        var elems = document.getElementsByClassName("permalink");
+        for (var i = 0; i < elems.length; ++i) {
+          elems[i].firstChild.innerHTML="&#x1f517;";
+          elems[i].firstChild.style.fontSize="18px";
+        }
+      });
+    </script>
+  </head>
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+    <div class="mdl-layout__drawer mdl-color--grey-100 mdl-color-text--blue-grey-50">
+      <header class="mdl-color--grey-100">
+        <a href="index.html"><img width="60px" src="https://gazebosim.org/assets/doxygen/gazebo_logo.svg"/></a>
+        <h1 class="project_title">Gazebo Msgs</h1>
+        <h2>API Reference</h2>
+        <div class="version">
+        8.7.1
+        </div>
+      </header>
+      <!-- NOTE: If you add a link to a doxygen generated page, then make
+                 sure to update the required_html_fils list in
+                 IgnCreateDocs.cmake -->
+      <nav class="ign-navigation mdl-navigation">
+        <a class="mdl-navigation__link" href="tutorials.html">
+          <i class="mdl-color-text--grey-400 material-icons"
+             role="presentation">insert_drive_file</i>Tutorials</a>
+        <a id="class_menu" class="mdl-navigation__link" href="#">
+          <i class="mdl-color-text--grey-400 material-icons"
+             role="presentation">library_books</i>Classes</a>
+        <a id="namespaces_menu"class="mdl-navigation__link" href="#">
+          <i class="mdl-color-text--grey-400 material-icons"
+             role="presentation">toc</i>Namespaces</a>
+        <a class="mdl-navigation__link" href="files.html">
+          <i class="mdl-color-text--grey-400 material-icons"
+             role="presentation">insert_drive_file</i>Files</a>
+        <a class="mdl-navigation__link" target="_blank"
+           href="http://gazebosim.org">
+          <i class="mdl-color-text--grey-400 material-icons"
+             role="presentation">launch</i>Gazebo Website</a>
+      </nav>
+      <!-- classes sub menu -->
+      <ul for="class_menu" class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect mdl-navigation">
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link" href="classes.html">Index</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="annotated.html">List</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="hierarchy.html">Hierarchy</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="functions.html">Members: All</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="functions_func.html">Members: Functions</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="functions_vars.html">Members: Variables</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="functions_type.html">Members: Typedefs</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="functions_enum.html">Members: Enumerations</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="functions_eval.html">Members: Enumerator</a>
+        </li>
+      </ul>
+      <!-- namespaces sub menu -->
+      <ul for="namespaces_menu" class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect mdl-navigation">
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespaces.html">List</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespacemembers.html">Members</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespacemembers_func.html">Functions</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespacemembers_type.html">Typedefs</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespacemembers_vars.html">Variables</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespacemembers_enum.html">Enumerations</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespacemembers_eval.html">Enumerator</a>
+        </li>
+      </ul>
+    </div>
+    <main class="mdl-layout__content mdl-color--white">
+    <div id="top">
+<!-- Generated by Doxygen 1.9.1 -->
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_1fbef9969d57a33c0d0fee07d766b343.html">include</a></li><li class="navelem"><a class="el" href="dir_8e48496dd7a9b784585b144a68e101eb.html">ignition</a></li><li class="navelem"><a class="el" href="dir_32419cf60cdac792f4b7fabd32d16484.html">msgs</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">build/ignition-msgs8/include/ignition/msgs/material.pb.h File Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;google/protobuf/port_def.inc&gt;</code><br />
+<code>#include &lt;google/protobuf/port_undef.inc&gt;</code><br />
+<code>#include &lt;google/protobuf/io/coded_stream.h&gt;</code><br />
+<code>#include &lt;google/protobuf/arena.h&gt;</code><br />
+<code>#include &lt;google/protobuf/arenastring.h&gt;</code><br />
+<code>#include &lt;google/protobuf/generated_message_table_driven.h&gt;</code><br />
+<code>#include &lt;google/protobuf/generated_message_util.h&gt;</code><br />
+<code>#include &lt;google/protobuf/inlined_string_field.h&gt;</code><br />
+<code>#include &lt;google/protobuf/metadata_lite.h&gt;</code><br />
+<code>#include &lt;google/protobuf/generated_message_reflection.h&gt;</code><br />
+<code>#include &lt;google/protobuf/message.h&gt;</code><br />
+<code>#include &lt;google/protobuf/repeated_field.h&gt;</code><br />
+<code>#include &lt;google/protobuf/extension_set.h&gt;</code><br />
+<code>#include &lt;google/protobuf/generated_enum_reflection.h&gt;</code><br />
+<code>#include &lt;google/protobuf/unknown_field_set.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="build_2ignition-msgs8_2include_2ignition_2msgs_2color_8pb_8h_source.html">ignition/msgs/color.pb.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="build_2ignition-msgs8_2include_2ignition_2msgs_2header_8pb_8h_source.html">ignition/msgs/header.pb.h</a>&quot;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;<a class="el" href="build_2ignition-msgs8_2include_2ignition_2msgs_2Export_8hh_source.html">ignition/msgs/Export.hh</a>&gt;</code><br />
+</div>
+<p><a href="build_2ignition-msgs8_2include_2ignition_2msgs_2material_8pb_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structis__proto__enum_3_01_1_1ignition_1_1msgs_1_1Material__PBR__WorkflowType_01_4.html">is_proto_enum&lt; ::ignition::msgs::Material_PBR_WorkflowType &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structis__proto__enum_3_01_1_1ignition_1_1msgs_1_1Material__ShaderType_01_4.html">is_proto_enum&lt; ::ignition::msgs::Material_ShaderType &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classignition_1_1msgs_1_1PROTOBUF__FINAL.html">PROTOBUF_FINAL</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTableStruct__ignition__2fmsgs__2fmaterial__2eproto.html">TableStruct_ignition_2fmsgs_2fmaterial_2eproto</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespaceignition"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition.html">ignition</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceignition_1_1msgs"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html">ignition::msgs</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceinternal"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html">internal</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:aabaf12218b9c5f7c110cbfdccdba4d15"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="build_2ignition-msgs8_2include_2ignition_2msgs_2material_8pb_8h.html#aabaf12218b9c5f7c110cbfdccdba4d15">PROTOBUF_INTERNAL_EXPORT_ignition_2fmsgs_2fmaterial_2eproto</a>&#160;&#160;&#160;IGNITION_MSGS_VISIBLE</td></tr>
+<tr class="separator:aabaf12218b9c5f7c110cbfdccdba4d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a51957202464e5a1161125d1a1dbb857b"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; const Material &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#a51957202464e5a1161125d1a1dbb857b">ConstMaterialSharedPtr</a></td></tr>
+<tr class="separator:a51957202464e5a1161125d1a1dbb857b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ff59dec076c22568d9c10a804644e7c"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr</a>&lt; const Material &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#a1ff59dec076c22568d9c10a804644e7c">ConstMaterialUniquePtr</a></td></tr>
+<tr class="separator:a1ff59dec076c22568d9c10a804644e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab471941b31294e82a77f5ae09ed1bc5b"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; Material &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#ab471941b31294e82a77f5ae09ed1bc5b">MaterialSharedPtr</a></td></tr>
+<tr class="separator:ab471941b31294e82a77f5ae09ed1bc5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c2565fc6e14a38e0a4ddbf726a403e8"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr</a>&lt; Material &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#a6c2565fc6e14a38e0a4ddbf726a403e8">MaterialUniquePtr</a></td></tr>
+<tr class="separator:a6c2565fc6e14a38e0a4ddbf726a403e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a3ff2e9518afab4b2daf968000f8d8c5d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#a3ff2e9518afab4b2daf968000f8d8c5d">Material_PBR_WorkflowType</a> : int { <br />
+&#160;&#160;<a class="el" href="namespaceignition_1_1msgs.html#a3ff2e9518afab4b2daf968000f8d8c5daee553eeb4b14aaa9494fbd77b421cbb0">Material_PBR_WorkflowType_NONE</a> = 0
+, <a class="el" href="namespaceignition_1_1msgs.html#a3ff2e9518afab4b2daf968000f8d8c5dada003cc376325738d88f4ded170da387">Material_PBR_WorkflowType_METAL</a> = 1
+, <a class="el" href="namespaceignition_1_1msgs.html#a3ff2e9518afab4b2daf968000f8d8c5dabd860e1364252e2538ad98bbdb9be32e">Material_PBR_WorkflowType_SPECULAR</a> = 2
+, <a class="el" href="namespaceignition_1_1msgs.html#a3ff2e9518afab4b2daf968000f8d8c5da42c9521b4daa9b9ad157073639454890">Material_PBR_WorkflowType_Material_PBR_WorkflowType_INT_MIN_SENTINEL_DO_NOT_USE_</a> = std::numeric_limits&lt;::PROTOBUF_NAMESPACE_ID::int32&gt;::min()
+, <br />
+&#160;&#160;<a class="el" href="namespaceignition_1_1msgs.html#a3ff2e9518afab4b2daf968000f8d8c5dae4c36b8d12dc0f0424007075ec648c1e">Material_PBR_WorkflowType_Material_PBR_WorkflowType_INT_MAX_SENTINEL_DO_NOT_USE_</a> = std::numeric_limits&lt;::PROTOBUF_NAMESPACE_ID::int32&gt;::max()
+<br />
+ }</td></tr>
+<tr class="separator:a3ff2e9518afab4b2daf968000f8d8c5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5902b32ab5bfcd091221aa9669d66bc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#ab5902b32ab5bfcd091221aa9669d66bc">Material_ShaderType</a> : int { <br />
+&#160;&#160;<a class="el" href="namespaceignition_1_1msgs.html#ab5902b32ab5bfcd091221aa9669d66bca54b51873890f118f1a6704e19c963be1">Material_ShaderType_VERTEX</a> = 0
+, <a class="el" href="namespaceignition_1_1msgs.html#ab5902b32ab5bfcd091221aa9669d66bca8477ac0ee507eab66ec1af41fed06545">Material_ShaderType_PIXEL</a> = 1
+, <a class="el" href="namespaceignition_1_1msgs.html#ab5902b32ab5bfcd091221aa9669d66bca11fee0f9404fbcfb98ed76ddb731a03c">Material_ShaderType_NORMAL_MAP_OBJECT_SPACE</a> = 2
+, <a class="el" href="namespaceignition_1_1msgs.html#ab5902b32ab5bfcd091221aa9669d66bcadb78478c08b0926ba66dc177420e9a6a">Material_ShaderType_NORMAL_MAP_TANGENT_SPACE</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespaceignition_1_1msgs.html#ab5902b32ab5bfcd091221aa9669d66bcade6a49f6aa1e7879dcb72580962d5b59">Material_ShaderType_Material_ShaderType_INT_MIN_SENTINEL_DO_NOT_USE_</a> = std::numeric_limits&lt;::PROTOBUF_NAMESPACE_ID::int32&gt;::min()
+, <a class="el" href="namespaceignition_1_1msgs.html#ab5902b32ab5bfcd091221aa9669d66bca89b635844ed9589c1d9c529150abff12">Material_ShaderType_Material_ShaderType_INT_MAX_SENTINEL_DO_NOT_USE_</a> = std::numeric_limits&lt;::PROTOBUF_NAMESPACE_ID::int32&gt;::max()
+<br />
+ }</td></tr>
+<tr class="separator:ab5902b32ab5bfcd091221aa9669d66bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ac19799088ff67164ccc1084829da0df5"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:ac19799088ff67164ccc1084829da0df5"><td class="memTemplItemLeft" align="right" valign="top">PROTOBUF_NAMESPACE_OPEN IGNITION_MSGS_VISIBLE ::ignition::msgs::Material *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="build_2ignition-msgs8_2include_2ignition_2msgs_2material_8pb_8h.html#ac19799088ff67164ccc1084829da0df5">Arena::CreateMaybeMessage&lt;::ignition::msgs::Material &gt;</a> (Arena *)</td></tr>
+<tr class="separator:ac19799088ff67164ccc1084829da0df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4b514e5b182c3e879d8e679bb18be3d"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:ac4b514e5b182c3e879d8e679bb18be3d"><td class="memTemplItemLeft" align="right" valign="top">IGNITION_MSGS_VISIBLE ::ignition::msgs::Material_PBR *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="build_2ignition-msgs8_2include_2ignition_2msgs_2material_8pb_8h.html#ac4b514e5b182c3e879d8e679bb18be3d">Arena::CreateMaybeMessage&lt;::ignition::msgs::Material_PBR &gt;</a> (Arena *)</td></tr>
+<tr class="separator:ac4b514e5b182c3e879d8e679bb18be3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82fbd423cf20fa49a56b1ad7e7dbb339"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a82fbd423cf20fa49a56b1ad7e7dbb339"><td class="memTemplItemLeft" align="right" valign="top">IGNITION_MSGS_VISIBLE ::ignition::msgs::Material_Script *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="build_2ignition-msgs8_2include_2ignition_2msgs_2material_8pb_8h.html#a82fbd423cf20fa49a56b1ad7e7dbb339">Arena::CreateMaybeMessage&lt;::ignition::msgs::Material_Script &gt;</a> (Arena *)</td></tr>
+<tr class="separator:a82fbd423cf20fa49a56b1ad7e7dbb339"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a888067f469a651d5cc2edfa5d3bebd3e"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a888067f469a651d5cc2edfa5d3bebd3e"><td class="memTemplItemLeft" align="right" valign="top">const EnumDescriptor *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="build_2ignition-msgs8_2include_2ignition_2msgs_2material_8pb_8h.html#a888067f469a651d5cc2edfa5d3bebd3e">GetEnumDescriptor&lt; ::ignition::msgs::Material_PBR_WorkflowType &gt;</a> ()</td></tr>
+<tr class="separator:a888067f469a651d5cc2edfa5d3bebd3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbb46c2a29f0f1e13dfbca8d76408aad"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:abbb46c2a29f0f1e13dfbca8d76408aad"><td class="memTemplItemLeft" align="right" valign="top">const EnumDescriptor *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="build_2ignition-msgs8_2include_2ignition_2msgs_2material_8pb_8h.html#abbb46c2a29f0f1e13dfbca8d76408aad">GetEnumDescriptor&lt; ::ignition::msgs::Material_ShaderType &gt;</a> ()</td></tr>
+<tr class="separator:abbb46c2a29f0f1e13dfbca8d76408aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af252b6c6bd6e263622e487708ed8ad24"><td class="memItemLeft" align="right" valign="top">IGNITION_MSGS_VISIBLEconst ::PROTOBUF_NAMESPACE_ID::EnumDescriptor *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#af252b6c6bd6e263622e487708ed8ad24">Material_PBR_WorkflowType_descriptor</a> ()</td></tr>
+<tr class="separator:af252b6c6bd6e263622e487708ed8ad24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f573925dc5fbfe6dfbf99f3dd67128d"><td class="memItemLeft" align="right" valign="top">IGNITION_MSGS_VISIBLE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#a4f573925dc5fbfe6dfbf99f3dd67128d">Material_PBR_WorkflowType_IsValid</a> (int value)</td></tr>
+<tr class="separator:a4f573925dc5fbfe6dfbf99f3dd67128d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62535a70e617da84f7322366d35c2b57"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a62535a70e617da84f7322366d35c2b57"><td class="memTemplItemLeft" align="right" valign="top">const <a class="elRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#a62535a70e617da84f7322366d35c2b57">Material_PBR_WorkflowType_Name</a> (T enum_t_value)</td></tr>
+<tr class="separator:a62535a70e617da84f7322366d35c2b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a164ac01804db2e1aecb545ff14bafeb9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#a164ac01804db2e1aecb545ff14bafeb9">Material_PBR_WorkflowType_Parse</a> (const <a class="elRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;name, Material_PBR_WorkflowType *value)</td></tr>
+<tr class="separator:a164ac01804db2e1aecb545ff14bafeb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6beeaed3785d7113e5c3a1afc85c20aa"><td class="memItemLeft" align="right" valign="top">IGNITION_MSGS_VISIBLEconst ::PROTOBUF_NAMESPACE_ID::EnumDescriptor *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#a6beeaed3785d7113e5c3a1afc85c20aa">Material_ShaderType_descriptor</a> ()</td></tr>
+<tr class="separator:a6beeaed3785d7113e5c3a1afc85c20aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f07e574495de5790bdc0efa52018974"><td class="memItemLeft" align="right" valign="top">IGNITION_MSGS_VISIBLE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#a7f07e574495de5790bdc0efa52018974">Material_ShaderType_IsValid</a> (int value)</td></tr>
+<tr class="separator:a7f07e574495de5790bdc0efa52018974"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af105d5fe2e7b44b28ea561fd67ca3bd3"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:af105d5fe2e7b44b28ea561fd67ca3bd3"><td class="memTemplItemLeft" align="right" valign="top">const <a class="elRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#af105d5fe2e7b44b28ea561fd67ca3bd3">Material_ShaderType_Name</a> (T enum_t_value)</td></tr>
+<tr class="separator:af105d5fe2e7b44b28ea561fd67ca3bd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4727b3f259eb1c224b2f8137dafcc943"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#a4727b3f259eb1c224b2f8137dafcc943">Material_ShaderType_Parse</a> (const <a class="elRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;name, Material_ShaderType *value)</td></tr>
+<tr class="separator:a4727b3f259eb1c224b2f8137dafcc943"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ab7cedd075c3ec7b0d5c8dcc66ad3a08e"><td class="memItemLeft" align="right" valign="top">IGNITION_MSGS_VISIBLE MaterialDefaultTypeInternal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#ab7cedd075c3ec7b0d5c8dcc66ad3a08e">_Material_default_instance_</a></td></tr>
+<tr class="separator:ab7cedd075c3ec7b0d5c8dcc66ad3a08e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2ec05ba945b658c3e070e2eeb4975f1"><td class="memItemLeft" align="right" valign="top">IGNITION_MSGS_VISIBLE Material_PBRDefaultTypeInternal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#aa2ec05ba945b658c3e070e2eeb4975f1">_Material_PBR_default_instance_</a></td></tr>
+<tr class="separator:aa2ec05ba945b658c3e070e2eeb4975f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada4d0829b1a1078df92f37cc7635425d"><td class="memItemLeft" align="right" valign="top">IGNITION_MSGS_VISIBLE Material_ScriptDefaultTypeInternal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#ada4d0829b1a1078df92f37cc7635425d">_Material_Script_default_instance_</a></td></tr>
+<tr class="separator:ada4d0829b1a1078df92f37cc7635425d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ebfa7a99bdd50d12c3ca09c4741b8a2"><td class="memItemLeft" align="right" valign="top">IGNITION_MSGS_VISIBLEconst ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="build_2ignition-msgs8_2include_2ignition_2msgs_2material_8pb_8h.html#a4ebfa7a99bdd50d12c3ca09c4741b8a2">descriptor_table_ignition_2fmsgs_2fmaterial_2eproto</a></td></tr>
+<tr class="separator:a4ebfa7a99bdd50d12c3ca09c4741b8a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf8a2b8398033153cc019a5dfc7ddac1"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#adf8a2b8398033153cc019a5dfc7ddac1">Material_PBR_WorkflowType_WorkflowType_ARRAYSIZE</a> = Material_PBR_WorkflowType_WorkflowType_MAX + 1</td></tr>
+<tr class="separator:adf8a2b8398033153cc019a5dfc7ddac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a250b79034aed185114d9195f5fb07fd1"><td class="memItemLeft" align="right" valign="top">constexpr Material_PBR_WorkflowType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#a250b79034aed185114d9195f5fb07fd1">Material_PBR_WorkflowType_WorkflowType_MAX</a> = Material_PBR_WorkflowType_SPECULAR</td></tr>
+<tr class="separator:a250b79034aed185114d9195f5fb07fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20f9ce3816afe74e11ef43477ce79a31"><td class="memItemLeft" align="right" valign="top">constexpr Material_PBR_WorkflowType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#a20f9ce3816afe74e11ef43477ce79a31">Material_PBR_WorkflowType_WorkflowType_MIN</a> = Material_PBR_WorkflowType_NONE</td></tr>
+<tr class="separator:a20f9ce3816afe74e11ef43477ce79a31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfa2726a475bd32e8438cf33d109ec9e"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#abfa2726a475bd32e8438cf33d109ec9e">Material_ShaderType_ShaderType_ARRAYSIZE</a> = Material_ShaderType_ShaderType_MAX + 1</td></tr>
+<tr class="separator:abfa2726a475bd32e8438cf33d109ec9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa03a1fee50d62a8a56d2734e14354d8b"><td class="memItemLeft" align="right" valign="top">constexpr Material_ShaderType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#aa03a1fee50d62a8a56d2734e14354d8b">Material_ShaderType_ShaderType_MAX</a> = Material_ShaderType_NORMAL_MAP_TANGENT_SPACE</td></tr>
+<tr class="separator:aa03a1fee50d62a8a56d2734e14354d8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29a633f11b2476a08d77783f801fae93"><td class="memItemLeft" align="right" valign="top">constexpr Material_ShaderType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#a29a633f11b2476a08d77783f801fae93">Material_ShaderType_ShaderType_MIN</a> = Material_ShaderType_VERTEX</td></tr>
+<tr class="separator:a29a633f11b2476a08d77783f801fae93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="aabaf12218b9c5f7c110cbfdccdba4d15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabaf12218b9c5f7c110cbfdccdba4d15">&#9670;&nbsp;</a></span>PROTOBUF_INTERNAL_EXPORT_ignition_2fmsgs_2fmaterial_2eproto</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PROTOBUF_INTERNAL_EXPORT_ignition_2fmsgs_2fmaterial_2eproto&#160;&#160;&#160;IGNITION_MSGS_VISIBLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ac19799088ff67164ccc1084829da0df5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac19799088ff67164ccc1084829da0df5">&#9670;&nbsp;</a></span>Arena::CreateMaybeMessage&lt;::ignition::msgs::Material &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PROTOBUF_NAMESPACE_OPEN IGNITION_MSGS_VISIBLE ::ignition::msgs::Material* Arena::CreateMaybeMessage&lt;::ignition::msgs::Material &gt; </td>
+          <td>(</td>
+          <td class="paramtype">Arena *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac4b514e5b182c3e879d8e679bb18be3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4b514e5b182c3e879d8e679bb18be3d">&#9670;&nbsp;</a></span>Arena::CreateMaybeMessage&lt;::ignition::msgs::Material_PBR &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IGNITION_MSGS_VISIBLE ::ignition::msgs::Material_PBR* Arena::CreateMaybeMessage&lt;::ignition::msgs::Material_PBR &gt; </td>
+          <td>(</td>
+          <td class="paramtype">Arena *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a82fbd423cf20fa49a56b1ad7e7dbb339"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82fbd423cf20fa49a56b1ad7e7dbb339">&#9670;&nbsp;</a></span>Arena::CreateMaybeMessage&lt;::ignition::msgs::Material_Script &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IGNITION_MSGS_VISIBLE ::ignition::msgs::Material_Script* Arena::CreateMaybeMessage&lt;::ignition::msgs::Material_Script &gt; </td>
+          <td>(</td>
+          <td class="paramtype">Arena *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a888067f469a651d5cc2edfa5d3bebd3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a888067f469a651d5cc2edfa5d3bebd3e">&#9670;&nbsp;</a></span>GetEnumDescriptor&lt; ::ignition::msgs::Material_PBR_WorkflowType &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const EnumDescriptor* GetEnumDescriptor&lt; ::<a class="el" href="namespaceignition_1_1msgs.html#a3ff2e9518afab4b2daf968000f8d8c5d">ignition::msgs::Material_PBR_WorkflowType</a> &gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="namespaceignition_1_1msgs.html#af252b6c6bd6e263622e487708ed8ad24">ignition::msgs::Material_PBR_WorkflowType_descriptor()</a>.</p>
+
+</div>
+</div>
+<a id="abbb46c2a29f0f1e13dfbca8d76408aad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbb46c2a29f0f1e13dfbca8d76408aad">&#9670;&nbsp;</a></span>GetEnumDescriptor&lt; ::ignition::msgs::Material_ShaderType &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const EnumDescriptor* GetEnumDescriptor&lt; ::<a class="el" href="namespaceignition_1_1msgs.html#ab5902b32ab5bfcd091221aa9669d66bc">ignition::msgs::Material_ShaderType</a> &gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="namespaceignition_1_1msgs.html#a6beeaed3785d7113e5c3a1afc85c20aa">ignition::msgs::Material_ShaderType_descriptor()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a4ebfa7a99bdd50d12c3ca09c4741b8a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ebfa7a99bdd50d12c3ca09c4741b8a2">&#9670;&nbsp;</a></span>descriptor_table_ignition_2fmsgs_2fmaterial_2eproto</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IGNITION_MSGS_VISIBLEconst ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ignition_2fmsgs_2fmaterial_2eproto</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="classignition_1_1msgs_1_1PROTOBUF__FINAL.html#abee10a388b53df255f15fbec07e1ac80">PROTOBUF_FINAL::GetMetadata()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+      </div>
+    </main>
+  </div>
+</body>

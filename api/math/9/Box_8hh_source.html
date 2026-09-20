@@ -1,0 +1,259 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <meta name="keywords" content="Gazebo Math">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Gazebo Math: Box.hh Source File</title>
+    <script type="text/javascript" src="https://gazebosim.org/assets/doxygen/dynsections.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <link rel="icon" type="image/x-icon" href="https://gazebosim.org/assets/icon/favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.deep_orange-blue.min.css" />
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.min.js"></script>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> </script>
+    <link href="https://gazebosim.org/assets/doxygen/doxygen.css" rel="stylesheet" type="text/css">
+  </head>
+    <script type="text/javascript">
+      /* Replace all the "permalink" &#9670;&nbsp; icons with a unicode link
+        symbol.*/
+      $(document).ready(function() {
+        var elems = document.getElementsByClassName("permalink");
+        for (var i = 0; i < elems.length; ++i) {
+          elems[i].firstChild.innerHTML="&#x1f517;";
+          elems[i].firstChild.style.fontSize="18px";
+        }
+      });
+    </script>
+  </head>
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+    <div class="mdl-layout__drawer mdl-color--grey-100 mdl-color-text--blue-grey-50">
+      <header class="mdl-color--grey-100">
+        <a href="index.html"><img width="60px" src="https://gazebosim.org/assets/doxygen/gazebo_logo.svg"/></a>
+        <h1 class="project_title">Gazebo Math</h1>
+        <h2>API Reference</h2>
+        <div class="version">
+        9.3.0
+        </div>
+      </header>
+      <!-- NOTE: If you add a link to a doxygen generated page, then make
+                 sure to update the required_html_fils list in
+                 GzCreateDocs.cmake -->
+      <nav class="gz-navigation mdl-navigation">
+        <a class="mdl-navigation__link" href="tutorials.html">
+          <i class="mdl-color-text--grey-400 material-icons"
+             role="presentation">insert_drive_file</i>Tutorials</a>
+        <a id="class_menu" class="mdl-navigation__link" href="#">
+          <i class="mdl-color-text--grey-400 material-icons"
+             role="presentation">library_books</i>Classes</a>
+        <a id="namespaces_menu"class="mdl-navigation__link" href="#">
+          <i class="mdl-color-text--grey-400 material-icons"
+             role="presentation">toc</i>Namespaces</a>
+        <a class="mdl-navigation__link" href="files.html">
+          <i class="mdl-color-text--grey-400 material-icons"
+             role="presentation">insert_drive_file</i>Files</a>
+        <a class="mdl-navigation__link" target="_blank"
+           href="http://gazebosim.org">
+          <i class="mdl-color-text--grey-400 material-icons"
+             role="presentation">launch</i>Gazebo Website</a>
+      </nav>
+      <!-- classes sub menu -->
+      <ul for="class_menu" class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect mdl-navigation">
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link" href="classes.html">Index</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="annotated.html">List</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="hierarchy.html">Hierarchy</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="functions.html">Members: All</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="functions_func.html">Members: Functions</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="functions_vars.html">Members: Variables</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="functions_type.html">Members: Typedefs</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="functions_enum.html">Members: Enumerations</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="functions_eval.html">Members: Enumerator</a>
+        </li>
+      </ul>
+      <!-- namespaces sub menu -->
+      <ul for="namespaces_menu" class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect mdl-navigation">
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespaces.html">List</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespacemembers.html">Members</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespacemembers_func.html">Functions</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespacemembers_type.html">Typedefs</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespacemembers_vars.html">Variables</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespacemembers_enum.html">Enumerations</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespacemembers_eval.html">Enumerator</a>
+        </li>
+      </ul>
+    </div>
+    <main class="mdl-layout__content mdl-color--white">
+    <div id="top">
+<!-- Generated by Doxygen 1.9.8 -->
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_5f70b597a8f3cb7e191c654fdc4ac806.html">gz-math</a></li><li class="navelem"><a class="el" href="dir_078c05cd486cbf4f25c108ac6a855843.html">include</a></li><li class="navelem"><a class="el" href="dir_cb23e0bbad0208f30fc2b464607664c0.html">gz</a></li><li class="navelem"><a class="el" href="dir_0f196ca5b9fd4ac373b7623d3ec837c2.html">math</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Box.hh</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="Box_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright (C) 2018 Open Source Robotics Foundation</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * you may not use this file except in compliance with the License.</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * You may obtain a copy of the License at</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> *     http://www.apache.org/licenses/LICENSE-2.0</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> * Unless required by applicable law or agreed to in writing, software</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> * See the License for the specific language governing permissions and</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> * limitations under the License.</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#ifndef GZ_MATH_BOX_HH_</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#define GZ_MATH_BOX_HH_</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;optional&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;gz/math/config.hh&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;<a class="code" href="MassMatrix3_8hh.html">gz/math/MassMatrix3.hh</a>&gt;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;<a class="code" href="Material_8hh.html">gz/math/Material.hh</a>&gt;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;<a class="code" href="Plane_8hh.html">gz/math/Plane.hh</a>&gt;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;<a class="code" href="Vector3_8hh.html">gz/math/Vector3.hh</a>&gt;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &quot;gz/math/detail/WellOrderedVector.hh&quot;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;set&gt;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacegz_1_1math.html">gz::math</a></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="comment">// Inline bracket to help doxygen filtering.</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keyword">inline</span> <span class="keyword">namespace </span>GZ_MATH_VERSION_NAMESPACE {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="namespacegz_1_1math.html#ad608b5048126a6985affbc5322cdfe55">   38</a></span>  <span class="keyword">using </span><a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/container/set.html">IntersectionPoints</a> = <a class="code hl_classRef" href="http://en.cppreference.com/w/cpp/container/set.html">std::set&lt;Vector3&lt;T&gt;</a>, <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">WellOrderedVectors&lt;T&gt;</a>&gt;;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Precision&gt;</div>
+<div class="foldopen" id="foldopen00056" data-start="{" data-end="};">
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Box.html">   56</a></span>  <span class="keyword">class </span><a class="code hl_class" href="classgz_1_1math_1_1Box.html" title="A representation of a box. All units are in meters.">Box</a></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Box.html#ab35f0568f1775ad9ae0b7c63c47f0362">   59</a></span>    <span class="keyword">public</span>: <a class="code hl_function" href="classgz_1_1math_1_1Box.html#ab35f0568f1775ad9ae0b7c63c47f0362" title="Default constructor.">Box</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Box.html#a3268dc9f471a5bc26c00b19829477eb9">   65</a></span>    <span class="keyword">public</span>: <a class="code hl_function" href="classgz_1_1math_1_1Box.html#a3268dc9f471a5bc26c00b19829477eb9" title="Construct a box with specified dimensions.">Box</a>(<span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">Precision</a> <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">_length</a>,</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                <span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">Precision</a> <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">_width</a>,</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                <span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">Precision</a> <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">_height</a>);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Box.html#aee9614e143078d777141a79f9aa4c01e">   74</a></span>    <span class="keyword">public</span>: <a class="code hl_function" href="classgz_1_1math_1_1Box.html#aee9614e143078d777141a79f9aa4c01e" title="Construct a box with specified dimensions and a material.">Box</a>(<span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">Precision</a> <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">_length</a>, <span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">Precision</a> <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">_width</a>,</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                <span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">Precision</a> <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">_height</a>,</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                <span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1math_1_1Material.html" title="Contains information about a single material.">gz::math::Material</a> &amp;<a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">_mat</a>);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Box.html#a91e037bd89fc0d551bccc6e126939e5e">   85</a></span>    <span class="keyword">public</span>: <span class="keyword">explicit</span> <a class="code hl_function" href="classgz_1_1math_1_1Box.html#a91e037bd89fc0d551bccc6e126939e5e" title="Construct a box with specified dimensions, in vector form.">Box</a>(<span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">Vector3&lt;Precision&gt;</a> &amp;<a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">_size</a>);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Box.html#a4c2e738d65cf8d08f3ecfc5420410881">   96</a></span>    <span class="keyword">public</span>: <a class="code hl_function" href="classgz_1_1math_1_1Box.html#a4c2e738d65cf8d08f3ecfc5420410881" title="Construct a box with specified dimensions, in vector form and a material.">Box</a>(<span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">Vector3&lt;Precision&gt;</a> &amp;<a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">_size</a>,</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                <span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1math_1_1Material.html" title="Contains information about a single material.">gz::math::Material</a> &amp;<a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">_mat</a>);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Box.html#a5ab846803ceaac48894c110890e09193">  101</a></span>    <span class="keyword">public</span>: <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">math::Vector3&lt;Precision&gt;</a> <a class="code hl_function" href="classgz_1_1math_1_1Box.html#a5ab846803ceaac48894c110890e09193" title="Get the size of the box.">Size</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Box.html#a97ca850b98c4b79d305c3c61dcf10635">  110</a></span>    <span class="keyword">public</span>: <span class="keywordtype">void</span> <a class="code hl_function" href="classgz_1_1math_1_1Box.html#a97ca850b98c4b79d305c3c61dcf10635" title="Set the size of the box.">SetSize</a>(<span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">math::Vector3&lt;Precision&gt;</a> &amp;<a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">_size</a>);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Box.html#a8a59132b3258be1708a9fb69b9e52952">  116</a></span>    <span class="keyword">public</span>: <span class="keywordtype">void</span> <a class="code hl_function" href="classgz_1_1math_1_1Box.html#a8a59132b3258be1708a9fb69b9e52952" title="Set the size of the box.">SetSize</a>(<span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">Precision</a> <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">_length</a>,</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                         <span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">Precision</a> <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">_width</a>,</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                         <span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">Precision</a> <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">_height</a>);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Box.html#a64764afa9266d6b0082bc18a9a4ceb0b">  123</a></span>    <span class="keyword">public</span>: <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1math_1_1Box.html#a64764afa9266d6b0082bc18a9a4ceb0b" title="Equality test operator.">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">Box&lt;Precision&gt;</a> &amp;<a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">_b</a>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Box.html#a55e19800f82798b042fe651d15a39032">  128</a></span>    <span class="keyword">public</span>: <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1math_1_1Box.html#a55e19800f82798b042fe651d15a39032" title="Inequality test operator.">operator!=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">Box&lt;Precision&gt;</a> &amp;<a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">_b</a>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Box.html#a9c8bfd20ec87521a6a0c842a64834b10">  132</a></span>    <span class="keyword">public</span>: <span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1math_1_1Material.html" title="Contains information about a single material.">gz::math::Material</a> &amp;<a class="code hl_function" href="classgz_1_1math_1_1Box.html#a9c8bfd20ec87521a6a0c842a64834b10" title="Get the material associated with this box.">Material</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Box.html#a224f81bf45aa10e947c74deb024b3be4">  136</a></span>    <span class="keyword">public</span>: <span class="keywordtype">void</span> <a class="code hl_function" href="classgz_1_1math_1_1Box.html#a224f81bf45aa10e947c74deb024b3be4" title="Set the material associated with this box.">SetMaterial</a>(<span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1math_1_1Material.html" title="Contains information about a single material.">gz::math::Material</a> &amp;<a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">_mat</a>);</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Box.html#ac245d54b17073999b7762639756f97d2">  140</a></span>    <span class="keyword">public</span>: <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">Precision</a> <a class="code hl_function" href="classgz_1_1math_1_1Box.html#ac245d54b17073999b7762639756f97d2" title="Get the volume of the box in m^3.">Volume</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Box.html#aa539d47e87ba8ba913bdf803dbe5d8e9">  146</a></span>    <span class="keyword">public</span>: <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">Precision</a> <a class="code hl_function" href="classgz_1_1math_1_1Box.html#aa539d47e87ba8ba913bdf803dbe5d8e9" title="Get the volume of the box below a plane.">VolumeBelow</a>(<span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">Plane&lt;Precision&gt;</a> &amp;<a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">_plane</a>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <span class="keyword">public</span>: std::optional&lt;Vector3&lt;Precision&gt;&gt;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Box.html#a4d284970cc1bf6c7d4ed8b89f3e736e1">  154</a></span>      <a class="code hl_function" href="classgz_1_1math_1_1Box.html#a4d284970cc1bf6c7d4ed8b89f3e736e1" title="Center of volume below the plane. This is useful when calculating where buoyancy should be applied,...">CenterOfVolumeBelow</a>(<span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">Plane&lt;Precision&gt;</a> &amp;<a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">_plane</a>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keyword">public</span>: <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">IntersectionPoints&lt;Precision&gt;</a></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Box.html#ad7ab3cf9ac4d636905efb27d1ef957ff">  162</a></span>      <a class="code hl_function" href="classgz_1_1math_1_1Box.html#ad7ab3cf9ac4d636905efb27d1ef957ff" title="All the vertices which are on or below the plane.">VerticesBelow</a>(<span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">Plane&lt;Precision&gt;</a> &amp;<a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">_plane</a>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Box.html#aa0ce7b1ec0ea5a42837ea308b2e03907">  168</a></span>    <span class="keyword">public</span>: <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">Vector3&lt;Precision&gt;</a> <a class="code hl_function" href="classgz_1_1math_1_1Box.html#aa0ce7b1ec0ea5a42837ea308b2e03907" title="Get the centroid of the box. It coincides with the origin of the reference frame defined in the class...">Centroid</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Box.html#a560a2db51aebac4ed15060f4bc62e650">  178</a></span>    <span class="keyword">public</span>: <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">Precision</a> <a class="code hl_function" href="classgz_1_1math_1_1Box.html#a560a2db51aebac4ed15060f4bc62e650" title="Compute the box&#39;s density given a mass value. The box is assumed to be solid with uniform density....">DensityFromMass</a>(<span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">Precision</a> <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">_mass</a>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Box.html#a4a6fbe08af3c4be27fdc77db3616641a">  192</a></span>    <span class="keyword">public</span>: <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1math_1_1Box.html#a4a6fbe08af3c4be27fdc77db3616641a" title="Set the density of this box based on a mass value. Density is computed using double DensityFromMass(c...">SetDensityFromMass</a>(<span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">Precision</a> <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">_mass</a>);</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Box.html#a6b88ca85bfc3f40e2f6498a173ac27d4">  201</a></span>    <span class="keyword">public</span>: <span class="keywordtype">bool</span> <a class="code hl_function" href="classgz_1_1math_1_1Box.html#a6b88ca85bfc3f40e2f6498a173ac27d4" title="Get the mass matrix for this box. This function is only meaningful if the box&#39;s size and material hav...">MassMatrix</a>(<a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">MassMatrix3&lt;Precision&gt;</a> &amp;<a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">_massMat</a>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Box.html#a158dc2058f3e62a6e42dc58919715964">  209</a></span>    <span class="keyword">public</span>: std::optional&lt; MassMatrix3&lt;Precision&gt; &gt; <a class="code hl_function" href="classgz_1_1math_1_1Box.html#a158dc2058f3e62a6e42dc58919715964" title="Get the mass matrix for this box. This function is only meaningful if the box&#39;s size and material hav...">MassMatrix</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno"><a class="line" href="classgz_1_1math_1_1Box.html#a60e1559bb7931831722636579ab6273c">  216</a></span>    <span class="keyword">public</span>: <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">IntersectionPoints&lt;Precision&gt;</a> <a class="code hl_function" href="classgz_1_1math_1_1Box.html#a60e1559bb7931831722636579ab6273c" title="Get intersection between a plane and the box&#39;s edges. Edges contained on the plane are ignored.">Intersections</a>(</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>      <span class="keyword">const</span> <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">Plane&lt;Precision&gt;</a> &amp;<a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">_plane</a>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    <span class="keyword">private</span>: <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">Vector3&lt;Precision&gt;</a> size = <a class="code hl_class" href="classgz_1_1math_1_1Vector3.html" title="The Vector3 class represents the generic vector containing 3 elements. Since it&#39;s commonly used to ke...">Vector3&lt;Precision&gt;::Zero</a>;</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    <span class="keyword">private</span>: <a class="code hl_class" href="classgz_1_1math_1_1Material.html" title="Contains information about a single material.">gz::math::Material</a> material;</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>  };</div>
+</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno"><a class="line" href="namespacegz_1_1math.html#afed002a1597021c62d7b1328787865f0">  228</a></span>  <span class="keyword">typedef</span> <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">Box&lt;int&gt;</a> <a class="code hl_typedef" href="namespacegz_1_1math.html#afed002a1597021c62d7b1328787865f0" title="Box with integer precision.">Boxi</a>;</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno"><a class="line" href="namespacegz_1_1math.html#add37e4a554767c8901397f2cb0cf9b34">  232</a></span>  <span class="keyword">typedef</span> <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">Box&lt;double&gt;</a> <a class="code hl_typedef" href="namespacegz_1_1math.html#add37e4a554767c8901397f2cb0cf9b34" title="Box with double precision.">Boxd</a>;</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno"><a class="line" href="namespacegz_1_1math.html#a25eeb601d860c46ec27edfe94eddff36">  236</a></span>  <span class="keyword">typedef</span> <a class="code hl_class" href="classgz_1_1math_1_1Matrix6.html" title="A 6x6 matrix class.">Box&lt;float&gt;</a> <a class="code hl_typedef" href="namespacegz_1_1math.html#a25eeb601d860c46ec27edfe94eddff36" title="Box with float precision.">Boxf</a>;</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>  }  <span class="comment">// namespace GZ_MATH_VERSION_NAMESPACE</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>}  <span class="comment">// namespace gz::math</span></div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="preprocessor">#include &quot;gz/math/detail/Box.hh&quot;</span></div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="preprocessor">#endif  </span><span class="comment">// GZ_MATH_BOX_HH_</span></div>
+</div><!-- fragment --></div><!-- contents -->
+      </div>
+    </main>
+  </div>
+</body>

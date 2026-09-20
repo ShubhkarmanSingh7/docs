@@ -1,0 +1,353 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <meta name="keywords" content="Gazebo Msgs">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Gazebo Msgs: entity.pb.h File Reference</title>
+    <script type="text/javascript" src="https://gazebosim.org/assets/doxygen/dynsections.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <link rel="icon" type="image/x-icon" href="https://gazebosim.org/assets/icon/favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.deep_orange-blue.min.css" />
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.min.js"></script>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> </script>
+    <link href="https://gazebosim.org/assets/doxygen/doxygen.css" rel="stylesheet" type="text/css">
+  </head>
+    <script type="text/javascript">
+      /* Replace all the "permalink" &#9670;&nbsp; icons with a unicode link
+        symbol.*/
+      $(document).ready(function() {
+        var elems = document.getElementsByClassName("permalink");
+        for (var i = 0; i < elems.length; ++i) {
+          elems[i].firstChild.innerHTML="&#x1f517;";
+          elems[i].firstChild.style.fontSize="18px";
+        }
+      });
+    </script>
+  </head>
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+    <div class="mdl-layout__drawer mdl-color--grey-100 mdl-color-text--blue-grey-50">
+      <header class="mdl-color--grey-100">
+        <a href="index.html"><img width="60px" src="https://gazebosim.org/assets/doxygen/gazebo_logo.svg"/></a>
+        <h1 class="project_title">Gazebo Msgs</h1>
+        <h2>API Reference</h2>
+        <div class="version">
+        8.7.1
+        </div>
+      </header>
+      <!-- NOTE: If you add a link to a doxygen generated page, then make
+                 sure to update the required_html_fils list in
+                 IgnCreateDocs.cmake -->
+      <nav class="ign-navigation mdl-navigation">
+        <a class="mdl-navigation__link" href="tutorials.html">
+          <i class="mdl-color-text--grey-400 material-icons"
+             role="presentation">insert_drive_file</i>Tutorials</a>
+        <a id="class_menu" class="mdl-navigation__link" href="#">
+          <i class="mdl-color-text--grey-400 material-icons"
+             role="presentation">library_books</i>Classes</a>
+        <a id="namespaces_menu"class="mdl-navigation__link" href="#">
+          <i class="mdl-color-text--grey-400 material-icons"
+             role="presentation">toc</i>Namespaces</a>
+        <a class="mdl-navigation__link" href="files.html">
+          <i class="mdl-color-text--grey-400 material-icons"
+             role="presentation">insert_drive_file</i>Files</a>
+        <a class="mdl-navigation__link" target="_blank"
+           href="http://gazebosim.org">
+          <i class="mdl-color-text--grey-400 material-icons"
+             role="presentation">launch</i>Gazebo Website</a>
+      </nav>
+      <!-- classes sub menu -->
+      <ul for="class_menu" class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect mdl-navigation">
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link" href="classes.html">Index</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="annotated.html">List</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="hierarchy.html">Hierarchy</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="functions.html">Members: All</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="functions_func.html">Members: Functions</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="functions_vars.html">Members: Variables</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="functions_type.html">Members: Typedefs</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="functions_enum.html">Members: Enumerations</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+             href="functions_eval.html">Members: Enumerator</a>
+        </li>
+      </ul>
+      <!-- namespaces sub menu -->
+      <ul for="namespaces_menu" class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect mdl-navigation">
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespaces.html">List</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespacemembers.html">Members</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespacemembers_func.html">Functions</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespacemembers_type.html">Typedefs</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespacemembers_vars.html">Variables</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespacemembers_enum.html">Enumerations</a>
+        </li>
+        <li class="mdl-menu__item">
+          <a class="mdl-navigation__link"
+            href="namespacemembers_eval.html">Enumerator</a>
+        </li>
+      </ul>
+    </div>
+    <main class="mdl-layout__content mdl-color--white">
+    <div id="top">
+<!-- Generated by Doxygen 1.9.1 -->
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_1fbef9969d57a33c0d0fee07d766b343.html">include</a></li><li class="navelem"><a class="el" href="dir_8e48496dd7a9b784585b144a68e101eb.html">ignition</a></li><li class="navelem"><a class="el" href="dir_32419cf60cdac792f4b7fabd32d16484.html">msgs</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">build/ignition-msgs8/include/ignition/msgs/entity.pb.h File Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;google/protobuf/port_def.inc&gt;</code><br />
+<code>#include &lt;google/protobuf/port_undef.inc&gt;</code><br />
+<code>#include &lt;google/protobuf/io/coded_stream.h&gt;</code><br />
+<code>#include &lt;google/protobuf/arena.h&gt;</code><br />
+<code>#include &lt;google/protobuf/arenastring.h&gt;</code><br />
+<code>#include &lt;google/protobuf/generated_message_table_driven.h&gt;</code><br />
+<code>#include &lt;google/protobuf/generated_message_util.h&gt;</code><br />
+<code>#include &lt;google/protobuf/inlined_string_field.h&gt;</code><br />
+<code>#include &lt;google/protobuf/metadata_lite.h&gt;</code><br />
+<code>#include &lt;google/protobuf/generated_message_reflection.h&gt;</code><br />
+<code>#include &lt;google/protobuf/message.h&gt;</code><br />
+<code>#include &lt;google/protobuf/repeated_field.h&gt;</code><br />
+<code>#include &lt;google/protobuf/extension_set.h&gt;</code><br />
+<code>#include &lt;google/protobuf/generated_enum_reflection.h&gt;</code><br />
+<code>#include &lt;google/protobuf/unknown_field_set.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="build_2ignition-msgs8_2include_2ignition_2msgs_2header_8pb_8h_source.html">ignition/msgs/header.pb.h</a>&quot;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;<a class="el" href="build_2ignition-msgs8_2include_2ignition_2msgs_2Export_8hh_source.html">ignition/msgs/Export.hh</a>&gt;</code><br />
+</div>
+<p><a href="build_2ignition-msgs8_2include_2ignition_2msgs_2entity_8pb_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structis__proto__enum_3_01_1_1ignition_1_1msgs_1_1Entity__Type_01_4.html">is_proto_enum&lt; ::ignition::msgs::Entity_Type &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classignition_1_1msgs_1_1PROTOBUF__FINAL.html">PROTOBUF_FINAL</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTableStruct__ignition__2fmsgs__2fentity__2eproto.html">TableStruct_ignition_2fmsgs_2fentity_2eproto</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespaceignition"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition.html">ignition</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceignition_1_1msgs"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html">ignition::msgs</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceinternal"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceinternal.html">internal</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a8883548a3bfed310e2671482cd8662fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="build_2ignition-msgs8_2include_2ignition_2msgs_2entity_8pb_8h.html#a8883548a3bfed310e2671482cd8662fb">PROTOBUF_INTERNAL_EXPORT_ignition_2fmsgs_2fentity_2eproto</a>&#160;&#160;&#160;IGNITION_MSGS_VISIBLE</td></tr>
+<tr class="separator:a8883548a3bfed310e2671482cd8662fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:aa2c5f61c79bec70c28205cb3e111ff9d"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; const Entity &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#aa2c5f61c79bec70c28205cb3e111ff9d">ConstEntitySharedPtr</a></td></tr>
+<tr class="separator:aa2c5f61c79bec70c28205cb3e111ff9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a440327e4b335527e0afe75e802be6e41"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr</a>&lt; const Entity &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#a440327e4b335527e0afe75e802be6e41">ConstEntityUniquePtr</a></td></tr>
+<tr class="separator:a440327e4b335527e0afe75e802be6e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e0c18bf1865e6ff16f28dde951dbac0"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" href="http://en.cppreference.com/w/cpp/memory/shared_ptr.html">std::shared_ptr</a>&lt; Entity &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#a7e0c18bf1865e6ff16f28dde951dbac0">EntitySharedPtr</a></td></tr>
+<tr class="separator:a7e0c18bf1865e6ff16f28dde951dbac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78fed2291e9756cbdd26d7c616bf4d3d"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr</a>&lt; Entity &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#a78fed2291e9756cbdd26d7c616bf4d3d">EntityUniquePtr</a></td></tr>
+<tr class="separator:a78fed2291e9756cbdd26d7c616bf4d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ad0467750141bb9a5c49751a65497d136"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#ad0467750141bb9a5c49751a65497d136">Entity_Type</a> : int { <br />
+&#160;&#160;<a class="el" href="namespaceignition_1_1msgs.html#ad0467750141bb9a5c49751a65497d136ae50a9dc4896a061c891f00d83f5983fb">Entity_Type_NONE</a> = 0
+, <a class="el" href="namespaceignition_1_1msgs.html#ad0467750141bb9a5c49751a65497d136a274ff024f11e859976958c9bc9bb8c84">Entity_Type_LIGHT</a> = 1
+, <a class="el" href="namespaceignition_1_1msgs.html#ad0467750141bb9a5c49751a65497d136afb8f4f1861d97e126c292390faf69e52">Entity_Type_MODEL</a> = 2
+, <a class="el" href="namespaceignition_1_1msgs.html#ad0467750141bb9a5c49751a65497d136aa5e6343f51718c69e17d74cd2863f4a0">Entity_Type_LINK</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespaceignition_1_1msgs.html#ad0467750141bb9a5c49751a65497d136a5a5e4937be90b18aa6db138597afd694">Entity_Type_VISUAL</a> = 4
+, <a class="el" href="namespaceignition_1_1msgs.html#ad0467750141bb9a5c49751a65497d136ab8eaff2da4eb79aeadfccd783517c557">Entity_Type_COLLISION</a> = 5
+, <a class="el" href="namespaceignition_1_1msgs.html#ad0467750141bb9a5c49751a65497d136a2f3f94098b150dcd4efc8dd654829124">Entity_Type_SENSOR</a> = 6
+, <a class="el" href="namespaceignition_1_1msgs.html#ad0467750141bb9a5c49751a65497d136a12def8c776f732bf5a4b60fa8dbe8d45">Entity_Type_JOINT</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="namespaceignition_1_1msgs.html#ad0467750141bb9a5c49751a65497d136a48975ce1779569e93dde59987f2c6068">Entity_Type_ACTOR</a> = 8
+, <a class="el" href="namespaceignition_1_1msgs.html#ad0467750141bb9a5c49751a65497d136af8a0f8769dcd0c8ba662be96d0cb1763">Entity_Type_WORLD</a> = 9
+, <a class="el" href="namespaceignition_1_1msgs.html#ad0467750141bb9a5c49751a65497d136ab20249a0a04e55ecedaef81947ad9649">Entity_Type_Entity_Type_INT_MIN_SENTINEL_DO_NOT_USE_</a> = std::numeric_limits&lt;::PROTOBUF_NAMESPACE_ID::int32&gt;::min()
+, <a class="el" href="namespaceignition_1_1msgs.html#ad0467750141bb9a5c49751a65497d136a553bfb7355a081eca58187bb63c4cd0b">Entity_Type_Entity_Type_INT_MAX_SENTINEL_DO_NOT_USE_</a> = std::numeric_limits&lt;::PROTOBUF_NAMESPACE_ID::int32&gt;::max()
+<br />
+ }</td></tr>
+<tr class="separator:ad0467750141bb9a5c49751a65497d136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a780e484ff6ce77b0175fa4ef619e3ebd"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a780e484ff6ce77b0175fa4ef619e3ebd"><td class="memTemplItemLeft" align="right" valign="top">PROTOBUF_NAMESPACE_OPEN IGNITION_MSGS_VISIBLE ::ignition::msgs::Entity *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="build_2ignition-msgs8_2include_2ignition_2msgs_2entity_8pb_8h.html#a780e484ff6ce77b0175fa4ef619e3ebd">Arena::CreateMaybeMessage&lt;::ignition::msgs::Entity &gt;</a> (Arena *)</td></tr>
+<tr class="separator:a780e484ff6ce77b0175fa4ef619e3ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a798f59f3e1a8aa588769eae7add45f13"><td class="memItemLeft" align="right" valign="top">IGNITION_MSGS_VISIBLEconst ::PROTOBUF_NAMESPACE_ID::EnumDescriptor *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#a798f59f3e1a8aa588769eae7add45f13">Entity_Type_descriptor</a> ()</td></tr>
+<tr class="separator:a798f59f3e1a8aa588769eae7add45f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1768e4e0f598b82474391f16e1f40bae"><td class="memItemLeft" align="right" valign="top">IGNITION_MSGS_VISIBLE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#a1768e4e0f598b82474391f16e1f40bae">Entity_Type_IsValid</a> (int value)</td></tr>
+<tr class="separator:a1768e4e0f598b82474391f16e1f40bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6833e4a014553e1c73c93b06622a06e5"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a6833e4a014553e1c73c93b06622a06e5"><td class="memTemplItemLeft" align="right" valign="top">const <a class="elRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#a6833e4a014553e1c73c93b06622a06e5">Entity_Type_Name</a> (T enum_t_value)</td></tr>
+<tr class="separator:a6833e4a014553e1c73c93b06622a06e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a322b840c184513c73065872b5e2b7126"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#a322b840c184513c73065872b5e2b7126">Entity_Type_Parse</a> (const <a class="elRef" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp;name, Entity_Type *value)</td></tr>
+<tr class="separator:a322b840c184513c73065872b5e2b7126"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b40ca9fe7dad9a13ab10d034b1b9fd8"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a6b40ca9fe7dad9a13ab10d034b1b9fd8"><td class="memTemplItemLeft" align="right" valign="top">const EnumDescriptor *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="build_2ignition-msgs8_2include_2ignition_2msgs_2entity_8pb_8h.html#a6b40ca9fe7dad9a13ab10d034b1b9fd8">GetEnumDescriptor&lt; ::ignition::msgs::Entity_Type &gt;</a> ()</td></tr>
+<tr class="separator:a6b40ca9fe7dad9a13ab10d034b1b9fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a0bd6c305c9f6b2f3fa76421e4ba8a9e7"><td class="memItemLeft" align="right" valign="top">IGNITION_MSGS_VISIBLE EntityDefaultTypeInternal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#a0bd6c305c9f6b2f3fa76421e4ba8a9e7">_Entity_default_instance_</a></td></tr>
+<tr class="separator:a0bd6c305c9f6b2f3fa76421e4ba8a9e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52f2e03d44fb4342d8a767b6f7b1e49b"><td class="memItemLeft" align="right" valign="top">IGNITION_MSGS_VISIBLEconst ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="build_2ignition-msgs8_2include_2ignition_2msgs_2entity_8pb_8h.html#a52f2e03d44fb4342d8a767b6f7b1e49b">descriptor_table_ignition_2fmsgs_2fentity_2eproto</a></td></tr>
+<tr class="separator:a52f2e03d44fb4342d8a767b6f7b1e49b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59d1c73ba1ed9e5ee66d02976bb2b719"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#a59d1c73ba1ed9e5ee66d02976bb2b719">Entity_Type_Type_ARRAYSIZE</a> = Entity_Type_Type_MAX + 1</td></tr>
+<tr class="separator:a59d1c73ba1ed9e5ee66d02976bb2b719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0af54c29205b666033646d75849d869"><td class="memItemLeft" align="right" valign="top">constexpr Entity_Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#ae0af54c29205b666033646d75849d869">Entity_Type_Type_MAX</a> = Entity_Type_WORLD</td></tr>
+<tr class="separator:ae0af54c29205b666033646d75849d869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2304d50a9d5eaf4eb658a8952ea1960"><td class="memItemLeft" align="right" valign="top">constexpr Entity_Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceignition_1_1msgs.html#ae2304d50a9d5eaf4eb658a8952ea1960">Entity_Type_Type_MIN</a> = Entity_Type_NONE</td></tr>
+<tr class="separator:ae2304d50a9d5eaf4eb658a8952ea1960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a8883548a3bfed310e2671482cd8662fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8883548a3bfed310e2671482cd8662fb">&#9670;&nbsp;</a></span>PROTOBUF_INTERNAL_EXPORT_ignition_2fmsgs_2fentity_2eproto</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PROTOBUF_INTERNAL_EXPORT_ignition_2fmsgs_2fentity_2eproto&#160;&#160;&#160;IGNITION_MSGS_VISIBLE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a780e484ff6ce77b0175fa4ef619e3ebd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a780e484ff6ce77b0175fa4ef619e3ebd">&#9670;&nbsp;</a></span>Arena::CreateMaybeMessage&lt;::ignition::msgs::Entity &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PROTOBUF_NAMESPACE_OPEN IGNITION_MSGS_VISIBLE ::ignition::msgs::Entity* Arena::CreateMaybeMessage&lt;::ignition::msgs::Entity &gt; </td>
+          <td>(</td>
+          <td class="paramtype">Arena *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b40ca9fe7dad9a13ab10d034b1b9fd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b40ca9fe7dad9a13ab10d034b1b9fd8">&#9670;&nbsp;</a></span>GetEnumDescriptor&lt; ::ignition::msgs::Entity_Type &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const EnumDescriptor* GetEnumDescriptor&lt; ::<a class="el" href="namespaceignition_1_1msgs.html#ad0467750141bb9a5c49751a65497d136">ignition::msgs::Entity_Type</a> &gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="namespaceignition_1_1msgs.html#a798f59f3e1a8aa588769eae7add45f13">ignition::msgs::Entity_Type_descriptor()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a52f2e03d44fb4342d8a767b6f7b1e49b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52f2e03d44fb4342d8a767b6f7b1e49b">&#9670;&nbsp;</a></span>descriptor_table_ignition_2fmsgs_2fentity_2eproto</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IGNITION_MSGS_VISIBLEconst ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ignition_2fmsgs_2fentity_2eproto</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="classignition_1_1msgs_1_1PROTOBUF__FINAL.html#abee10a388b53df255f15fbec07e1ac80">PROTOBUF_FINAL::GetMetadata()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+      </div>
+    </main>
+  </div>
+</body>
